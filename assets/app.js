@@ -12,9 +12,6 @@ var data_loaded = {
 function startHistory(){
     if (data_loaded.accounts && data_loaded.vms) {
         Backbone.history.start();
-        console.log('starting history');
-        console.log(accountsCollection);
-        console.log(vmsCollection);
     }
 }
 
@@ -56,8 +53,6 @@ var vmsCollection = new VirtualMachineCollection();
 // Get the data for the collections
 accountsCollection.fetch({
     success: function(collection) {
-        // console.log('loaded accounts ', collection);
-        // console.log('loaded accounts');
         data_loaded.accounts = true;
         startHistory();
     },
@@ -67,8 +62,6 @@ accountsCollection.fetch({
 });
 vmsCollection.fetch({
     success: function(collection,options) {
-        // console.log('loaded vm data ', collection);
-        // console.log('loaded vm data');
         data_loaded.vms = true;
         startHistory();
     },
@@ -210,7 +203,6 @@ var VirtualMachineDetailsView = Backbone.View.extend({
         $el.append(this.credentialTemplate({key:key, value:value}));
     },
     render: function(options) {
-        console.log(this);
         var self = this,
             model = this.model.toJSON();
         $(this.el).html(this.template(model));
@@ -242,8 +234,6 @@ var Router = Backbone.Router.extend({
         "*other": "viewAccounts"
     },
     viewVirtualMachine: function(accountId,vmId) {
-
-        console.log('showing VM info for ' + vmId);
 
         // First, make sure that columns 1, 2, & 3 have been shown
         this.viewAccount(accountId);
