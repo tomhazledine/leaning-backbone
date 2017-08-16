@@ -1,0 +1,256 @@
+{
+  "accounts": [
+    {
+      "adapter_endpoint": "http://127.0.0.1:8001/adapters/aws",
+      "credentials": {
+        "args": [
+          "AKIAIXA6RYXZWOYTB7DA",
+          "BpQ6QtmiaT69D0h692WfZyWEqiSzYJaW0theGshI"
+        ],
+        "kwargs": {
+          "libcloud_provider_constant": "ec2_eu_west"
+        }
+      },
+      "extra": {
+        "total_spend": 0.01
+      },
+      "id": 2,
+      "location": "Berlin",
+      "name": "AWS",
+      "parameterized_credentials": {
+        "arg0": "AKIAIXA6RYXZWOYTB7DA",
+        "arg1": "BpQ6QtmiaT69D0h692WfZyWEqiSzYJaW0theGshI",
+        "libcloud_provider_constant": "ec2_eu_west"
+      },
+      "spend": "InvoiceID,PayerAccountId,LinkedAccountId,RecordType,RecordID,BillingPeriodStartDate,BillingPeriodEndDate,InvoiceDate,PayerAccountName,LinkedAccountName,TaxationAddress,PayerPONumber,ProductCode,ProductName,SellerOfRecord,UsageType,Operation,RateId,ItemDescription,UsageStartDate,UsageEndDate,UsageQuantity,BlendedRate,CurrencyCode,CostBeforeTax,Credits,TaxAmount,TaxType,TotalCost\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000234435045\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AmazonS3\",\"Amazon Simple Storage Service\",\"Amazon Web Services, Inc.\",\"Requests-Tier1\",,\"3309305\",\"$0.00 per request - PUT, COPY, POST, or LIST requests under the monthly global free tier\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"49.0\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000233356287\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AmazonEC2\",\"Amazon Elastic Compute Cloud\",\"Amazon Web Services, Inc.\",\"EU-BoxUsage:t1.micro\",\"RunInstances:0010\",\"3543413\",\"$0.00 per RHEL t1.micro instance-hour (or partial hour) under monthly free tier\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"130.0\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000234435046\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AWSDataTransfer\",\"AWS Data Transfer\",\"Amazon Web Services, Inc.\",\"EU-DataTransfer-Regional-Bytes\",,\"3506993\",\"$0.000 per GB - regional data transfer under the monthly global free tier\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"0.00001964\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000233356288\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AWSDataTransfer\",\"AWS Data Transfer\",\"Amazon Web Services, Inc.\",\"EU-DataTransfer-Out-Bytes\",,\"3507000\",\"$0.000 per GB - data transfer out under the monthly global free tier\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"0.19807638\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000232475466\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AWSDataTransfer\",\"AWS Data Transfer\",\"Amazon Web Services, Inc.\",\"EU-USE1-AWS-Out-Bytes\",,\"3507023\",\"$0.000 per GB - data transfer out under the monthly global free tier\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2.6E-7\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000233356289\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AWSDataTransfer\",\"AWS Data Transfer\",\"Amazon Web Services, Inc.\",\"EU-DataTransfer-In-Bytes\",,\"3506934\",\"$0.000 per GB - data transfer in per month\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"0.03310489\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000233356290\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AmazonS3\",\"Amazon Simple Storage Service\",\"Amazon Web Services, Inc.\",\"EU-TimedStorage-ByteHrs\",,\"3309300\",\"$0.000 per GB - storage under the monthly global free tier\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"0.00291831\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000235443546\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AWSDataTransfer\",\"AWS Data Transfer\",\"Amazon Web Services, Inc.\",\"EU-USE1-AWS-In-Bytes\",,\"3507197\",\"$0.00 per GB - EU (Ireland) data transfer from US East (Northern Virginia)\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"0.00000102\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000233356291\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AmazonEC2\",\"Amazon Elastic Compute Cloud\",\"Amazon Web Services, Inc.\",\"EU-CW:MetricMonitorUsage\",,\"3543382\",\"$0.00 per metric-month - first 10 metrics\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"3.69489292\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000234536129\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AmazonS3\",\"Amazon Simple Storage Service\",\"Amazon Web Services, Inc.\",\"EU-Requests-Tier1\",,\"3309319\",\"$0.005 per 1,000 PUT, COPY, POST, or LIST requests\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"88.0\",,\"USD\",\"0.01\",\"0.0\",\"0.000000\",\"None\",\"0.010000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000233356292\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AmazonS3\",\"Amazon Simple Storage Service\",\"Amazon Web Services, Inc.\",\"EU-Requests-Tier1\",,\"3309306\",\"$0.00 per request - PUT, COPY, POST, or LIST requests under the monthly global free tier\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"1951.0\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000236408693\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AWSDataTransfer\",\"AWS Data Transfer\",\"Amazon Web Services, Inc.\",\"EU-CloudFront-In-Bytes\",,\"3507251\",\"$0.00 per GB data transfer in to EU (Ireland) from CloudFront\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"5.0E-8\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000234435047\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AWSDataTransfer\",\"AWS Data Transfer\",\"Amazon Web Services, Inc.\",\"EU-USW1-AWS-In-Bytes\",,\"3507199\",\"$0.00 per GB - EU (Ireland) data transfer from US West (Northern California)\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"0.00000367\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000233356293\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AmazonEC2\",\"Amazon Elastic Compute Cloud\",\"Amazon Web Services, Inc.\",\"EU-CW:Requests\",,\"3543373\",\"$0.00 per request - first 1,000,000 requests\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"169075.0\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000234435048\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AWSDataTransfer\",\"AWS Data Transfer\",\"Amazon Web Services, Inc.\",\"EU-USW1-AWS-Out-Bytes\",,\"3507024\",\"$0.000 per GB - data transfer out under the monthly global free tier\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"0.00000128\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000233356294\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AmazonEC2\",\"Amazon Elastic Compute Cloud\",\"Amazon Web Services, Inc.\",\"EU-EBS:VolumeUsage.gp2\",,\"3543496\",\"$0.00 per GB-month of General Purpose (SSD) provisioned storage under monthly free tier\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"12.83064573\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000233356295\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AmazonS3\",\"Amazon Simple Storage Service\",\"Amazon Web Services, Inc.\",\"EU-Requests-Tier2\",,\"3309315\",\"$0.00 per request - GET and all other requests under the monthly global free tier\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"285.0\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000233356296\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AmazonEC2\",\"Amazon Elastic Compute Cloud\",\"Amazon Web Services, Inc.\",\"EU-BoxUsage:t2.micro\",\"RunInstances\",\"3543449\",\"$0.00 per Linux t2.micro instance-hour (or partial hour) under monthly free tier\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"266.0\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"PayerLineItem\",\"1600000000234435049\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,\"AWSDataTransfer\",\"AWS Data Transfer\",\"Amazon Web Services, Inc.\",\"DataTransfer-Out-Bytes\",,\"3507001\",\"$0.000 per GB - data transfer out under the monthly global free tier\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"0.00002124\",,\"USD\",\"0.00\",\"0.0\",\"0.000000\",\"None\",\"0.000000\"\n\"Estimated\",\"767296251410\",\"\",\"InvoiceTotal\",\"InvoiceTotal:Estimated\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",\"2015/01/06 13:21:21\",\"AWS OSS-1\",\"\",\"Avinguda Diagonal 575 5a planta, Barcelona, Barcelona, 08029, ES\",,,,,,,,\"Total amount for invoice Estimated\",,,,,\"USD\",\"0.01\",\"0.0\",\"0.000000\",,\"0.01\"\n,\"767296251410\",,\"StatementTotal\",\"StatementTotal\",\"2015/01/01 00:00:00\",\"2015/01/31 23:59:59\",,,,,,,,,,,,\"Total statement amount for period 2015/01/01 00:00:00 - 2015/01/31 23:59:59\",,,,,\"USD\",\"0.01\",\"0.0\",\"0.000000\",,\"0.01\"\n,,,\"EstimatedDisclaimer\",,,,,,,,,,,,,,,\"This report reflects your estimated monthly bill for activity through approximately 2015/01/06 07:21:21\",,,,,,,,,,\n",
+      "tag": "aws",
+      "type_uuid": "09d1febe-170b-11e4-a87a-dd3639bf0917",
+      "uuid": "6ad2255e-3ca5-44bb-bf2c-0fccc8e83e76",
+      "vm_count": 9
+    },
+    {
+      "adapter_endpoint": "http://127.0.0.1:8001/adapters/azure",
+      "credentials": {
+        "args": [
+          "portalvhdsv1g9fp3lpz51b",
+          "YmKwcWVo9qAIjCRIP7ZzOxd3j3v+X8nojx2wEcyHyeBNlMoaARsoTGZiy1nqyRRcBLbI5v7/ZXSzZeKi2reTkA=="
+        ],
+        "kwargs": {
+          "account_key": "Bo5ao1992",
+          "account_name": "filcho.dragunchev",
+          "certificate_file": "azurecert.pem",
+          "subscription_id": "65add6f7-4994-4bd3-8aa2-d888f206ebeb"
+        }
+      },
+      "extra": {
+        "total_spend": 0.0
+      },
+      "id": 1,
+      "location": "Washington, D.C.",
+      "name": "Azure",
+      "parameterized_credentials": {
+        "account_key": "Bo5ao1992",
+        "account_name": "filcho.dragunchev",
+        "arg0": "portalvhdsv1g9fp3lpz51b",
+        "arg1": "YmKwcWVo9qAIjCRIP7ZzOxd3j3v+X8nojx2wEcyHyeBNlMoaARsoTGZiy1nqyRRcBLbI5v7/ZXSzZeKi2reTkA==",
+        "certificate_file": "azurecert.pem",
+        "subscription_id": "65add6f7-4994-4bd3-8aa2-d888f206ebeb"
+      },
+      "spend": "",
+      "tag": "azure",
+      "type_uuid": "2440ba58-5627-4ad9-9782-fe2559bd2a09",
+      "uuid": "ba14fc73-c04c-40b2-bf56-977e05c62866",
+      "vm_count": 5
+    },
+    {
+      "adapter_endpoint": "http://127.0.0.1:8001/adapters/cloudstack",
+      "credentials": {
+        "args": [
+          "P77H23A428BXGKY104ZK",
+          "fUJkA5MKKfif1LEau89QDvooDLrLF6j4VTJDrfl5"
+        ],
+        "kwargs": {
+          "host": "comp-api.jp-e1.cloudn-service.com",
+          "libcloud_provider_constant": "cloudstack",
+          "path": "/client/api"
+        }
+      },
+      "extra": {
+        "total_spend": 0.0
+      },
+      "id": 6,
+      "location": "New Delhi",
+      "name": "CloudN (Cloudstack)",
+      "parameterized_credentials": {
+        "arg0": "P77H23A428BXGKY104ZK",
+        "arg1": "fUJkA5MKKfif1LEau89QDvooDLrLF6j4VTJDrfl5",
+        "host": "comp-api.jp-e1.cloudn-service.com",
+        "libcloud_provider_constant": "cloudstack",
+        "path": "/client/api"
+      },
+      "spend": "",
+      "tag": "cloudstack",
+      "type_uuid": "719f7e32-1be2-11e4-b812-ad69ee8aa1e8",
+      "uuid": "b055a1b1-32ad-4436-b415-c73977b28842",
+      "vm_count": 2
+    },
+    {
+      "adapter_endpoint": "http://127.0.0.1:8001/adapters/vcd",
+      "credentials": {
+        "args": [
+          "bespin@bespin_vcd",
+          "pasty6"
+        ],
+        "kwargs": {
+          "api_version": "1.5",
+          "host": "api2.dev.lab2.jp.gcv-cloud.com",
+          "libcloud_provider_constant": "vcloud",
+          "port": 443
+        }
+      },
+      "extra": {
+        "total_spend": 0.0
+      },
+      "id": 4,
+      "location": "Tokyo",
+      "name": "Enterprise Cloud (VCD)",
+      "parameterized_credentials": {
+        "api_version": "1.5",
+        "arg0": "bespin@bespin_vcd",
+        "arg1": "pasty6",
+        "host": "api2.dev.lab2.jp.gcv-cloud.com",
+        "libcloud_provider_constant": "vcloud",
+        "port": 443
+      },
+      "spend": "",
+      "tag": "vcd",
+      "type_uuid": "09af60d4-170b-11e4-8f0f-b9aad38427ee",
+      "uuid": "02d59a60-2261-45f3-ad9f-42f44d7a6c4a",
+      "vm_count": 2
+    },
+    {
+      "adapter_endpoint": "http://127.0.0.1:8001/adapters/vsphere",
+      "credentials": {
+        "args": [],
+        "kwargs": {
+          "host": "os-controller",
+          "password": "NTTCOM1qaz",
+          "port": 48403,
+          "resource_pool": "BespinVDC (1ec3e773-0c41-420f-a1be-a627a3d1a295)",
+          "username": "Administrator"
+        }
+      },
+      "extra": {
+        "total_spend": 0.0
+      },
+      "id": 7,
+      "location": "Tokyo",
+      "name": "HSP (VSphere)",
+      "parameterized_credentials": {
+        "host": "os-controller",
+        "password": "NTTCOM1qaz",
+        "port": 48403,
+        "resource_pool": "BespinVDC (1ec3e773-0c41-420f-a1be-a627a3d1a295)",
+        "username": "Administrator"
+      },
+      "spend": "",
+      "tag": "vsphere",
+      "type_uuid": "d4e25136-d7e3-4319-a303-329e12b87cfd",
+      "uuid": "1b74a4c0-0110-4ba6-87db-72c8977ab89d",
+      "vm_count": 3
+    },
+    {
+      "adapter_endpoint": "http://127.0.0.1:8001/adapters/managed",
+      "credentials": {
+        "args": [],
+        "kwargs": {
+          "host": "cmdb-api",
+          "port": 80,
+          "token": "9781e21dc86e682b81bb6d00ef5ac6416072eed6"
+        }
+      },
+      "extra": {
+        "total_spend": 0.0
+      },
+      "id": 8,
+      "location": "Beijing",
+      "name": "Managed Hosting",
+      "parameterized_credentials": {
+        "host": "cmdb-api",
+        "port": 80,
+        "token": "9781e21dc86e682b81bb6d00ef5ac6416072eed6"
+      },
+      "spend": "",
+      "tag": "managed",
+      "type_uuid": "f297eb16-64cf-4739-ad45-2f10f20e300c",
+      "uuid": "1b767fec-04e9-4801-835a-5058edd1b12e",
+      "vm_count": 1
+    },
+    {
+      "adapter_endpoint": "http://127.0.0.1:8001/adapters/openstack",
+      "credentials": {
+        "args": [
+          "nbossbot",
+          "spanner"
+        ],
+        "kwargs": {
+          "ex_force_auth_url": "http://os-controller:15000",
+          "ex_force_auth_version": "2.0_password",
+          "ex_force_service_region": "regionOne",
+          "ex_tenant_name": "WILLNTT.LOCAL-CUSTOMER-8114-SERVICE-860",
+          "libcloud_provider_constant": "openstack"
+        }
+      },
+      "extra": {
+        "total_spend": 0.0
+      },
+      "id": 5,
+      "location": "San Francisco",
+      "name": "Openstack",
+      "parameterized_credentials": {
+        "arg0": "nbossbot",
+        "arg1": "spanner",
+        "ex_force_auth_url": "http://os-controller:15000",
+        "ex_force_auth_version": "2.0_password",
+        "ex_force_service_region": "regionOne",
+        "ex_tenant_name": "WILLNTT.LOCAL-CUSTOMER-8114-SERVICE-860",
+        "libcloud_provider_constant": "openstack"
+      },
+      "spend": "",
+      "tag": "openstack",
+      "type_uuid": "0a109e44-170b-11e4-a713-fb2f4f05040b",
+      "uuid": "abc33efe-e030-4ad5-a45f-7cd032ba643f",
+      "vm_count": 2
+    },
+    {
+      "adapter_endpoint": "http://127.0.0.1:8001/adapters/simplicloud",
+      "credentials": {
+        "args": [
+          "rqvvvxlg7649",
+          "ovjpgnqd"
+        ],
+        "kwargs": {
+          "api_version": "1.0",
+          "customer_id": 5995
+        }
+      },
+      "extra": {
+        "total_spend": 0.0
+      },
+      "id": 3,
+      "location": "Singapore",
+      "name": "Simplicloud",
+      "parameterized_credentials": {
+        "api_version": "1.0",
+        "arg0": "rqvvvxlg7649",
+        "arg1": "ovjpgnqd",
+        "customer_id": 5995
+      },
+      "spend": "",
+      "tag": "simplicloud",
+      "type_uuid": "39f192e4-5c7c-4982-9de3-70cbfcb46793",
+      "uuid": "c75e765b-722d-4514-9dcd-0b156248d8c2",
+      "vm_count": 3
+    }
+  ]
+}

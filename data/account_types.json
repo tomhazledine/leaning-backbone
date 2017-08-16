@@ -1,0 +1,259 @@
+{
+  "account_types": [
+    {
+      "credential_types": {
+        "args": [
+          {
+            "default": null,
+            "name": "Access Key"
+          },
+          {
+            "default": null,
+            "name": "Secret Key"
+          }
+        ],
+        "kwargs": {
+          "libcloud_provider_constant": {
+            "default": "ec2_us_west_oregon",
+            "name": "Provider constant"
+          }
+        }
+      },
+      "name": "Amazon Web Services",
+      "tag": "aws",
+      "uuid": "09d1febe-170b-11e4-a87a-dd3639bf0917"
+    },
+    {
+      "credential_types": {
+        "args": [
+          {
+            "default": null,
+            "name": "Account"
+          },
+          {
+            "default": null,
+            "name": "Access Key"
+          }
+        ],
+        "kwargs": {
+          "account_key": {
+            "default": null,
+            "name": "Account Key"
+          },
+          "account_name": {
+            "default": null,
+            "name": "Account Name"
+          },
+          "certificate_file": {
+            "default": null,
+            "name": "Certificate File"
+          },
+          "subscription_id": {
+            "default": null,
+            "name": "Subscription Id"
+          }
+        }
+      },
+      "name": "Azure",
+      "tag": "azure",
+      "uuid": "2440ba58-5627-4ad9-9782-fe2559bd2a09"
+    },
+    {
+      "credential_types": {
+        "args": [
+          {
+            "default": null,
+            "name": "API Key"
+          },
+          {
+            "default": null,
+            "name": "Secret Key"
+          }
+        ],
+        "kwargs": {
+          "host": {
+            "default": null,
+            "name": "Host"
+          },
+          "libcloud_provider_constant": {
+            "default": "cloudstack",
+            "name": "Provider constant"
+          },
+          "path": {
+            "default": null,
+            "name": "Path"
+          }
+        }
+      },
+      "name": "Cloudstack",
+      "tag": "cloudstack",
+      "uuid": "719f7e32-1be2-11e4-b812-ad69ee8aa1e8"
+    },
+    {
+      "credential_types": {
+        "args": [],
+        "kwargs": {
+          "host": {
+            "default": null,
+            "name": "Host"
+          },
+          "port": {
+            "default": null,
+            "name": "Port"
+          },
+          "token": {
+            "default": null,
+            "name": "Token"
+          }
+        }
+      },
+      "name": "Managed Hosting",
+      "tag": "managed",
+      "uuid": "f297eb16-64cf-4739-ad45-2f10f20e300c"
+    },
+    {
+      "credential_types": {
+        "args": [],
+        "kwargs": {
+          "db_path": {
+            "name": "Database path"
+          }
+        }
+      },
+      "name": "Mock cloud adapter",
+      "tag": "mock",
+      "uuid": "a4ae7eac-8409-4a5a-9cfc-53dd8eb2747e"
+    },
+    {
+      "credential_types": {
+        "args": [
+          {
+            "default": null,
+            "name": "API Key"
+          },
+          {
+            "default": null,
+            "name": "Secret Key"
+          }
+        ],
+        "kwargs": {
+          "api_version": {
+            "default": "1.0",
+            "name": "API Version"
+          },
+          "customer_id": {
+            "default": null,
+            "name": "Customer Id"
+          }
+        }
+      },
+      "name": "Netmagic Simplicloud",
+      "tag": "simplicloud",
+      "uuid": "39f192e4-5c7c-4982-9de3-70cbfcb46793"
+    },
+    {
+      "credential_types": {
+        "args": [
+          {
+            "default": null,
+            "name": "Username"
+          },
+          {
+            "default": null,
+            "name": "Password"
+          }
+        ],
+        "kwargs": {
+          "ex_force_auth_url": {
+            "default": null,
+            "name": "Auth URL"
+          },
+          "ex_force_auth_version": {
+            "default": "2.0_password",
+            "name": "Auth Version"
+          },
+          "ex_force_service_region": {
+            "default": null,
+            "name": "Region"
+          },
+          "ex_tenant_name": {
+            "default": null,
+            "name": "Project Name"
+          },
+          "libcloud_provider_constant": {
+            "default": "openstack",
+            "name": "Provider constant"
+          }
+        }
+      },
+      "name": "Openstack",
+      "tag": "openstack",
+      "uuid": "0a109e44-170b-11e4-a713-fb2f4f05040b"
+    },
+    {
+      "credential_types": {
+        "args": [
+          {
+            "default": null,
+            "name": "Login"
+          },
+          {
+            "default": null,
+            "name": "Password"
+          }
+        ],
+        "kwargs": {
+          "api_version": {
+            "default": "1.5",
+            "name": "API Version"
+          },
+          "host": {
+            "default": null,
+            "name": "Host"
+          },
+          "libcloud_provider_constant": {
+            "default": "vcloud",
+            "name": "Provider constant"
+          },
+          "port": {
+            "default": null,
+            "name": "Port"
+          }
+        }
+      },
+      "name": "VMware Cloud Director",
+      "tag": "vcd",
+      "uuid": "09af60d4-170b-11e4-8f0f-b9aad38427ee"
+    },
+    {
+      "credential_types": {
+        "args": [],
+        "kwargs": {
+          "host": {
+            "default": null,
+            "name": "Host"
+          },
+          "password": {
+            "default": null,
+            "name": "Password"
+          },
+          "port": {
+            "default": null,
+            "name": "Port"
+          },
+          "resource_pool": {
+            "default": null,
+            "name": "Resource Pool"
+          },
+          "username": {
+            "default": null,
+            "name": "Username"
+          }
+        }
+      },
+      "name": "VMware vSphere",
+      "tag": "vsphere",
+      "uuid": "d4e25136-d7e3-4319-a303-329e12b87cfd"
+    }
+  ]
+}

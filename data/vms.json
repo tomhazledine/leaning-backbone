@@ -1,0 +1,1566 @@
+{
+  "vms": [
+    {
+      "account_id": 2,
+      "account_name": "AWS",
+      "account_uuid": "6ad2255e-3ca5-44bb-bf2c-0fccc8e83e76",
+      "cmdb_id": null,
+      "extra": {
+        "action": "start",
+        "architecture": "x86_64",
+        "availability": "eu-west-1a",
+        "block_device_mapping": [
+          {
+            "device_name": "/dev/xvda",
+            "ebs": {
+              "delete": "true",
+              "iops": null,
+              "snapshot_id": null,
+              "volume_id": "vol-c5c89fc2",
+              "volume_size": null,
+              "volume_type": null
+            },
+            "virtual_name": null
+          }
+        ],
+        "client_token": "DiJXc1413282923448",
+        "dns_name": "",
+        "ebs_optimized": "false",
+        "groups": [
+          {
+            "group_id": "sg-04de6d61",
+            "group_name": "launch-wizard-3"
+          }
+        ],
+        "hypervisor": "xen",
+        "iam_profile": null,
+        "image_id": "ami-748e2903",
+        "instance_id": "i-8691ce63",
+        "instance_lifecycle": null,
+        "instance_tenancy": "default",
+        "instance_type": "t2.micro",
+        "kernel_id": null,
+        "key_name": null,
+        "launch_index": 0,
+        "launch_time": "2015-01-06T15:23:56.000Z",
+        "location": "eu-west-1a",
+        "monitoring": "enabled",
+        "os_type": null,
+        "platform": null,
+        "private_dns": "ip-172-31-29-227.eu-west-1.compute.internal",
+        "private_ips": "172.31.29.227 ",
+        "product_codes": [],
+        "public_ips": "",
+        "ramdisk_id": null,
+        "reason": "User initiated (2015-01-06 15:52:08 GMT)",
+        "root_device_name": "/dev/xvda",
+        "root_device_type": "ebs",
+        "source_dest_check": "true",
+        "status": "Stopped",
+        "subnet_id": "subnet-256fca40",
+        "tags": {
+          "Name": "filcho_instance_1"
+        },
+        "virtualization_type": "hvm",
+        "vpc_id": "vpc-143ec171"
+      },
+      "id": 4,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "filcho_instance_1",
+      "remote_id": "i-8691ce63",
+      "tag": "aws",
+      "uuid": "d928479d-b49d-417a-a56e-a9c68521eeb5",
+      "vm_tags": [
+        {
+          "id": 4,
+          "text": "aws",
+          "type": "automatic",
+          "uuid": "97a211d7-1e7e-4b72-a4c4-83214b4b80e7"
+        },
+        {
+          "id": 6,
+          "text": "eu-west-1a",
+          "type": "automatic",
+          "uuid": "d4af48cf-12e5-42d8-b164-4cd68f5a2444"
+        }
+      ]
+    },
+    {
+      "account_id": 2,
+      "account_name": "AWS",
+      "account_uuid": "6ad2255e-3ca5-44bb-bf2c-0fccc8e83e76",
+      "cmdb_id": null,
+      "extra": {
+        "action": "start",
+        "architecture": "x86_64",
+        "availability": "eu-west-1a",
+        "block_device_mapping": [
+          {
+            "device_name": "/dev/xvda",
+            "ebs": {
+              "delete": "true",
+              "iops": null,
+              "snapshot_id": null,
+              "volume_id": "vol-33cf9834",
+              "volume_size": null,
+              "volume_type": null
+            },
+            "virtual_name": null
+          }
+        ],
+        "client_token": "yUJlR1413279394672",
+        "dns_name": "",
+        "ebs_optimized": "false",
+        "groups": [
+          {
+            "group_id": "sg-f1d46794",
+            "group_name": "launch-wizard-2"
+          }
+        ],
+        "hypervisor": "xen",
+        "iam_profile": null,
+        "image_id": "ami-748e2903",
+        "instance_id": "i-b0603f55",
+        "instance_lifecycle": null,
+        "instance_tenancy": "default",
+        "instance_type": "t2.micro",
+        "kernel_id": null,
+        "key_name": null,
+        "launch_index": 0,
+        "launch_time": "2014-12-02T16:23:54.000Z",
+        "location": "eu-west-1a",
+        "monitoring": "enabled",
+        "os_type": null,
+        "platform": null,
+        "private_dns": "ip-172-31-17-199.eu-west-1.compute.internal",
+        "private_ips": "172.31.17.199 ",
+        "product_codes": [],
+        "public_ips": "",
+        "ramdisk_id": null,
+        "reason": "User initiated (2014-12-12 14:43:47 GMT)",
+        "root_device_name": "/dev/xvda",
+        "root_device_type": "ebs",
+        "source_dest_check": "true",
+        "status": "Stopped",
+        "subnet_id": "subnet-256fca40",
+        "tags": {
+          "Name": "filcho_instance_2"
+        },
+        "virtualization_type": "hvm",
+        "vpc_id": "vpc-143ec171"
+      },
+      "id": 5,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "filcho_instance_2",
+      "remote_id": "i-b0603f55",
+      "tag": "aws",
+      "uuid": "c217a29d-9fdc-40c1-bf4c-51c63065e5a5",
+      "vm_tags": [
+        {
+          "id": 4,
+          "text": "aws",
+          "type": "automatic",
+          "uuid": "97a211d7-1e7e-4b72-a4c4-83214b4b80e7"
+        },
+        {
+          "id": 6,
+          "text": "eu-west-1a",
+          "type": "automatic",
+          "uuid": "d4af48cf-12e5-42d8-b164-4cd68f5a2444"
+        }
+      ]
+    },
+    {
+      "account_id": 2,
+      "account_name": "AWS",
+      "account_uuid": "6ad2255e-3ca5-44bb-bf2c-0fccc8e83e76",
+      "cmdb_id": null,
+      "extra": {
+        "action": "start",
+        "architecture": "x86_64",
+        "availability": "eu-west-1a",
+        "block_device_mapping": [
+          {
+            "device_name": "/dev/xvda",
+            "ebs": {
+              "delete": "true",
+              "iops": null,
+              "snapshot_id": null,
+              "volume_id": "vol-bdf7a0ba",
+              "volume_size": null,
+              "volume_type": null
+            },
+            "virtual_name": null
+          }
+        ],
+        "client_token": "WzfoG1413283501279",
+        "dns_name": "",
+        "ebs_optimized": "false",
+        "groups": [
+          {
+            "group_id": "sg-5ddd6e38",
+            "group_name": "launch-wizard-4"
+          }
+        ],
+        "hypervisor": "xen",
+        "iam_profile": null,
+        "image_id": "ami-748e2903",
+        "instance_id": "i-8a8fd06f",
+        "instance_lifecycle": null,
+        "instance_tenancy": "default",
+        "instance_type": "t2.micro",
+        "kernel_id": null,
+        "key_name": null,
+        "launch_index": 0,
+        "launch_time": "2014-12-12T14:42:15.000Z",
+        "location": "eu-west-1a",
+        "monitoring": "enabled",
+        "os_type": null,
+        "platform": null,
+        "private_dns": "ip-172-31-22-192.eu-west-1.compute.internal",
+        "private_ips": "172.31.22.192 ",
+        "product_codes": [],
+        "public_ips": "",
+        "ramdisk_id": null,
+        "reason": "User initiated (2014-12-24 05:40:21 GMT)",
+        "root_device_name": "/dev/xvda",
+        "root_device_type": "ebs",
+        "source_dest_check": "true",
+        "status": "Stopped",
+        "subnet_id": "subnet-256fca40",
+        "tags": {
+          "Name": "filcho_instance_3"
+        },
+        "virtualization_type": "hvm",
+        "vpc_id": "vpc-143ec171"
+      },
+      "id": 7,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "filcho_instance_3",
+      "remote_id": "i-8a8fd06f",
+      "tag": "aws",
+      "uuid": "e55631ef-a534-44eb-87a0-50eeec01d3d2",
+      "vm_tags": [
+        {
+          "id": 4,
+          "text": "aws",
+          "type": "automatic",
+          "uuid": "97a211d7-1e7e-4b72-a4c4-83214b4b80e7"
+        },
+        {
+          "id": 6,
+          "text": "eu-west-1a",
+          "type": "automatic",
+          "uuid": "d4af48cf-12e5-42d8-b164-4cd68f5a2444"
+        }
+      ]
+    },
+    {
+      "account_id": 2,
+      "account_name": "AWS",
+      "account_uuid": "6ad2255e-3ca5-44bb-bf2c-0fccc8e83e76",
+      "cmdb_id": null,
+      "extra": {
+        "action": "start",
+        "architecture": "x86_64",
+        "availability": "eu-west-1b",
+        "block_device_mapping": [
+          {
+            "device_name": "/dev/xvda",
+            "ebs": {
+              "delete": "true",
+              "iops": null,
+              "snapshot_id": null,
+              "volume_id": "vol-4db09a46",
+              "volume_size": null,
+              "volume_type": null
+            },
+            "virtual_name": null
+          }
+        ],
+        "client_token": "iKpLw1413303509153",
+        "dns_name": "",
+        "ebs_optimized": "false",
+        "groups": [
+          {
+            "group_id": "sg-6ba2110e",
+            "group_name": "launch-wizard-5"
+          }
+        ],
+        "hypervisor": "xen",
+        "iam_profile": null,
+        "image_id": "ami-748e2903",
+        "instance_id": "i-19c2e35a",
+        "instance_lifecycle": null,
+        "instance_tenancy": "default",
+        "instance_type": "t2.micro",
+        "kernel_id": null,
+        "key_name": null,
+        "launch_index": 0,
+        "launch_time": "2014-11-28T14:26:55.000Z",
+        "location": "eu-west-1b",
+        "monitoring": "enabled",
+        "os_type": null,
+        "platform": null,
+        "private_dns": "ip-172-31-46-121.eu-west-1.compute.internal",
+        "private_ips": "172.31.46.121 ",
+        "product_codes": [],
+        "public_ips": "",
+        "ramdisk_id": null,
+        "reason": "User initiated (2014-11-28 14:51:56 GMT)",
+        "root_device_name": "/dev/xvda",
+        "root_device_type": "ebs",
+        "source_dest_check": "true",
+        "status": "Stopped",
+        "subnet_id": "subnet-138d4e64",
+        "tags": {
+          "Name": "filcho_instance_4"
+        },
+        "virtualization_type": "hvm",
+        "vpc_id": "vpc-143ec171"
+      },
+      "id": 8,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "filcho_instance_4",
+      "remote_id": "i-19c2e35a",
+      "tag": "aws",
+      "uuid": "bf045adc-4e86-4bc6-ae2d-c2481fe4fe21",
+      "vm_tags": [
+        {
+          "id": 4,
+          "text": "aws",
+          "type": "automatic",
+          "uuid": "97a211d7-1e7e-4b72-a4c4-83214b4b80e7"
+        },
+        {
+          "id": 7,
+          "text": "eu-west-1b",
+          "type": "automatic",
+          "uuid": "41a60d20-8fc0-46bb-904a-c8eae66fd243"
+        }
+      ]
+    },
+    {
+      "account_id": 2,
+      "account_name": "AWS",
+      "account_uuid": "6ad2255e-3ca5-44bb-bf2c-0fccc8e83e76",
+      "cmdb_id": null,
+      "extra": {
+        "action": "",
+        "architecture": "x86_64",
+        "availability": "eu-west-1b",
+        "block_device_mapping": [
+          {
+            "device_name": "/dev/sda1",
+            "ebs": {
+              "delete": "true",
+              "iops": null,
+              "snapshot_id": null,
+              "volume_id": "vol-d6dbe2dd",
+              "volume_size": null,
+              "volume_type": null
+            },
+            "virtual_name": null
+          }
+        ],
+        "client_token": "IDfdE1415022177997",
+        "dns_name": "",
+        "ebs_optimized": "false",
+        "groups": [
+          {
+            "group_id": "sg-d144ffb4",
+            "group_name": "launch-wizard-36"
+          }
+        ],
+        "hypervisor": "xen",
+        "iam_profile": null,
+        "image_id": "ami-f0b11187",
+        "instance_id": "i-e482b9a7",
+        "instance_lifecycle": null,
+        "instance_tenancy": "default",
+        "instance_type": "t2.micro",
+        "kernel_id": null,
+        "key_name": "aws_keypair",
+        "launch_index": 0,
+        "launch_time": "2014-11-12T17:21:51.000Z",
+        "location": "eu-west-1b",
+        "monitoring": "pending",
+        "os_type": null,
+        "platform": null,
+        "private_dns": "ip-172-31-40-133.eu-west-1.compute.internal",
+        "private_ips": "172.31.40.133 ",
+        "product_codes": [],
+        "public_ips": "",
+        "ramdisk_id": null,
+        "reason": "User initiated (2014-11-10 11:37:35 GMT)",
+        "root_device_name": "/dev/sda1",
+        "root_device_type": "ebs",
+        "source_dest_check": "true",
+        "status": "Unknown",
+        "subnet_id": "subnet-138d4e64",
+        "tags": {},
+        "virtualization_type": "hvm",
+        "vpc_id": "vpc-143ec171"
+      },
+      "id": 11,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "i-e482b9a7",
+      "remote_id": "i-e482b9a7",
+      "tag": "aws",
+      "uuid": "9e8998c2-1131-417b-9c57-3910a569fab6",
+      "vm_tags": [
+        {
+          "id": 4,
+          "text": "aws",
+          "type": "automatic",
+          "uuid": "97a211d7-1e7e-4b72-a4c4-83214b4b80e7"
+        },
+        {
+          "id": 7,
+          "text": "eu-west-1b",
+          "type": "automatic",
+          "uuid": "41a60d20-8fc0-46bb-904a-c8eae66fd243"
+        }
+      ]
+    },
+    {
+      "account_id": 2,
+      "account_name": "AWS",
+      "account_uuid": "6ad2255e-3ca5-44bb-bf2c-0fccc8e83e76",
+      "cmdb_id": null,
+      "extra": {
+        "action": "stop",
+        "architecture": "x86_64",
+        "availability": "eu-west-1c",
+        "block_device_mapping": [
+          {
+            "device_name": "/dev/sda1",
+            "ebs": {
+              "delete": "true",
+              "iops": null,
+              "snapshot_id": null,
+              "volume_id": "vol-5b254647",
+              "volume_size": null,
+              "volume_type": null
+            },
+            "virtual_name": null
+          }
+        ],
+        "client_token": "TLcGf1415114743674",
+        "dns_name": "ec2-54-72-111-164.eu-west-1.compute.amazonaws.com",
+        "ebs_optimized": "false",
+        "groups": [
+          {
+            "group_id": "sg-8eb50feb",
+            "group_name": "launch-wizard-41"
+          }
+        ],
+        "hypervisor": "xen",
+        "iam_profile": null,
+        "image_id": "ami-f0b11187",
+        "instance_id": "i-b8564afa",
+        "instance_lifecycle": null,
+        "instance_tenancy": "default",
+        "instance_type": "t2.micro",
+        "kernel_id": null,
+        "key_name": "aws_keypair",
+        "launch_index": 0,
+        "launch_time": "2015-01-06T15:52:12.000Z",
+        "location": "eu-west-1c",
+        "monitoring": "enabled",
+        "os_type": null,
+        "platform": null,
+        "private_dns": "ip-172-31-14-57.eu-west-1.compute.internal",
+        "private_ips": "172.31.14.57 ",
+        "product_codes": [],
+        "public_ips": "54.72.111.164 ",
+        "ramdisk_id": null,
+        "reason": "",
+        "root_device_name": "/dev/sda1",
+        "root_device_type": "ebs",
+        "source_dest_check": "true",
+        "status": "Running",
+        "subnet_id": "subnet-7a9c7a23",
+        "tags": {
+          "Name": "t1"
+        },
+        "virtualization_type": "hvm",
+        "vpc_id": "vpc-143ec171"
+      },
+      "id": 3,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "t1",
+      "remote_id": "i-b8564afa",
+      "tag": "aws",
+      "uuid": "0911adc9-bc7b-4460-b34a-54128631d4e3",
+      "vm_tags": [
+        {
+          "id": 4,
+          "text": "aws",
+          "type": "automatic",
+          "uuid": "97a211d7-1e7e-4b72-a4c4-83214b4b80e7"
+        },
+        {
+          "id": 5,
+          "text": "eu-west-1c",
+          "type": "automatic",
+          "uuid": "34b0a36b-8cf3-4b03-95e0-ce2faef3ff8c"
+        }
+      ]
+    },
+    {
+      "account_id": 2,
+      "account_name": "AWS",
+      "account_uuid": "6ad2255e-3ca5-44bb-bf2c-0fccc8e83e76",
+      "cmdb_id": "27bd4d64599b4131af40ae1243b41f27",
+      "extra": {
+        "action": "stop",
+        "architecture": "x86_64",
+        "availability": "eu-west-1c",
+        "block_device_mapping": [
+          {
+            "device_name": "/dev/sda1",
+            "ebs": {
+              "delete": "true",
+              "iops": null,
+              "snapshot_id": null,
+              "volume_id": "vol-88c78694",
+              "volume_size": null,
+              "volume_type": null
+            },
+            "virtual_name": null
+          }
+        ],
+        "client_token": "QDnMb1418313467907",
+        "dns_name": "ec2-54-77-253-170.eu-west-1.compute.amazonaws.com",
+        "ebs_optimized": "false",
+        "groups": [
+          {
+            "group_id": "sg-c6c356a3",
+            "group_name": "launch-wizard-43"
+          }
+        ],
+        "hypervisor": "xen",
+        "iam_profile": null,
+        "image_id": "ami-8cfc51fb",
+        "instance_id": "i-bce0275a",
+        "instance_lifecycle": null,
+        "instance_tenancy": "default",
+        "instance_type": "t1.micro",
+        "kernel_id": "aki-52a34525",
+        "key_name": "agentpair",
+        "launch_index": 0,
+        "launch_time": "2014-12-11T15:57:48.000Z",
+        "location": "eu-west-1c",
+        "monitoring": "enabled",
+        "os_type": null,
+        "platform": null,
+        "private_dns": "ip-172-31-1-204.eu-west-1.compute.internal",
+        "private_ips": "172.31.1.204 ",
+        "product_codes": [],
+        "public_ips": "54.77.253.170 ",
+        "ramdisk_id": null,
+        "reason": "",
+        "root_device_name": "/dev/sda1",
+        "root_device_type": "ebs",
+        "source_dest_check": "true",
+        "status": "Running",
+        "subnet_id": "subnet-7a9c7a23",
+        "tags": {
+          "Name": "t2"
+        },
+        "virtualization_type": "paravirtual",
+        "vpc_id": "vpc-143ec171"
+      },
+      "id": 6,
+      "is_managed": 1,
+      "managed_since": "2015-01-06 16:40:56.155283",
+      "name": "t2",
+      "remote_id": "i-bce0275a",
+      "tag": "aws",
+      "uuid": "7247f64f-6039-4f7e-8426-c693b66545a6",
+      "vm_tags": [
+        {
+          "id": 4,
+          "text": "aws",
+          "type": "automatic",
+          "uuid": "97a211d7-1e7e-4b72-a4c4-83214b4b80e7"
+        },
+        {
+          "id": 5,
+          "text": "eu-west-1c",
+          "type": "automatic",
+          "uuid": "34b0a36b-8cf3-4b03-95e0-ce2faef3ff8c"
+        },
+        {
+          "id": 20,
+          "text": "managed",
+          "type": "automatic",
+          "uuid": "8e141892-748d-44f6-a438-7b5043db1d42"
+        }
+      ]
+    },
+    {
+      "account_id": 2,
+      "account_name": "AWS",
+      "account_uuid": "6ad2255e-3ca5-44bb-bf2c-0fccc8e83e76",
+      "cmdb_id": null,
+      "extra": {
+        "action": "stop",
+        "architecture": "x86_64",
+        "availability": "eu-west-1a",
+        "block_device_mapping": [
+          {
+            "device_name": "/dev/sda1",
+            "ebs": {
+              "delete": "true",
+              "iops": null,
+              "snapshot_id": null,
+              "volume_id": "vol-3f444138",
+              "volume_size": null,
+              "volume_type": null
+            },
+            "virtual_name": null
+          }
+        ],
+        "client_token": "GEdXU1418765430965",
+        "dns_name": "ec2-54-77-232-108.eu-west-1.compute.amazonaws.com",
+        "ebs_optimized": "false",
+        "groups": [
+          {
+            "group_id": "sg-14b62171",
+            "group_name": "launch-wizard-44"
+          }
+        ],
+        "hypervisor": "xen",
+        "iam_profile": null,
+        "image_id": "ami-f0b11187",
+        "instance_id": "i-136792f7",
+        "instance_lifecycle": null,
+        "instance_tenancy": "default",
+        "instance_type": "t2.micro",
+        "kernel_id": null,
+        "key_name": "agentpair",
+        "launch_index": 0,
+        "launch_time": "2014-12-16T21:30:31.000Z",
+        "location": "eu-west-1a",
+        "monitoring": "enabled",
+        "os_type": null,
+        "platform": null,
+        "private_dns": "ip-172-31-26-116.eu-west-1.compute.internal",
+        "private_ips": "172.31.26.116 ",
+        "product_codes": [],
+        "public_ips": "54.77.232.108 ",
+        "ramdisk_id": null,
+        "reason": "",
+        "root_device_name": "/dev/sda1",
+        "root_device_type": "ebs",
+        "source_dest_check": "true",
+        "status": "Running",
+        "subnet_id": "subnet-256fca40",
+        "tags": {
+          "Name": "t3"
+        },
+        "virtualization_type": "hvm",
+        "vpc_id": "vpc-143ec171"
+      },
+      "id": 9,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "t3",
+      "remote_id": "i-136792f7",
+      "tag": "aws",
+      "uuid": "05e3d93a-db5b-4faf-92d4-04c108898cd9",
+      "vm_tags": [
+        {
+          "id": 4,
+          "text": "aws",
+          "type": "automatic",
+          "uuid": "97a211d7-1e7e-4b72-a4c4-83214b4b80e7"
+        },
+        {
+          "id": 6,
+          "text": "eu-west-1a",
+          "type": "automatic",
+          "uuid": "d4af48cf-12e5-42d8-b164-4cd68f5a2444"
+        }
+      ]
+    },
+    {
+      "account_id": 2,
+      "account_name": "AWS",
+      "account_uuid": "6ad2255e-3ca5-44bb-bf2c-0fccc8e83e76",
+      "cmdb_id": null,
+      "extra": {
+        "action": "start",
+        "architecture": "x86_64",
+        "availability": "eu-west-1a",
+        "block_device_mapping": [
+          {
+            "device_name": "/dev/sda1",
+            "ebs": {
+              "delete": "true",
+              "iops": null,
+              "snapshot_id": null,
+              "volume_id": "vol-655b6a62",
+              "volume_size": null,
+              "volume_type": null
+            },
+            "virtual_name": null
+          }
+        ],
+        "client_token": "MDcwj1417450426904",
+        "dns_name": "",
+        "ebs_optimized": "false",
+        "groups": [
+          {
+            "group_id": "sg-949e10f1",
+            "group_name": "launch-wizard-42"
+          }
+        ],
+        "hypervisor": "xen",
+        "iam_profile": null,
+        "image_id": "ami-f0b11187",
+        "instance_id": "i-548f93b1",
+        "instance_lifecycle": null,
+        "instance_tenancy": "default",
+        "instance_type": "t2.micro",
+        "kernel_id": null,
+        "key_name": "aws_keypair",
+        "launch_index": 0,
+        "launch_time": "2014-12-01T16:13:47.000Z",
+        "location": "eu-west-1a",
+        "monitoring": "enabled",
+        "os_type": null,
+        "platform": null,
+        "private_dns": "ip-172-31-25-182.eu-west-1.compute.internal",
+        "private_ips": "172.31.25.182 ",
+        "product_codes": [],
+        "public_ips": "",
+        "ramdisk_id": null,
+        "reason": "User initiated (2014-12-18 22:02:49 GMT)",
+        "root_device_name": "/dev/sda1",
+        "root_device_type": "ebs",
+        "source_dest_check": "true",
+        "status": "Stopped",
+        "subnet_id": "subnet-256fca40",
+        "tags": {
+          "Name": "t4"
+        },
+        "virtualization_type": "hvm",
+        "vpc_id": "vpc-143ec171"
+      },
+      "id": 10,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "t4",
+      "remote_id": "i-548f93b1",
+      "tag": "aws",
+      "uuid": "7882a943-a2ec-43b4-9725-8c443317aabb",
+      "vm_tags": [
+        {
+          "id": 4,
+          "text": "aws",
+          "type": "automatic",
+          "uuid": "97a211d7-1e7e-4b72-a4c4-83214b4b80e7"
+        },
+        {
+          "id": 6,
+          "text": "eu-west-1a",
+          "type": "automatic",
+          "uuid": "d4af48cf-12e5-42d8-b164-4cd68f5a2444"
+        }
+      ]
+    },
+    {
+      "account_id": 1,
+      "account_name": "Azure",
+      "account_uuid": "ba14fc73-c04c-40b2-bf56-977e05c62866",
+      "cmdb_id": null,
+      "extra": {
+        "disk_name": "aistisvm1-aistisvm1-0-201410141009170742",
+        "dns_name": "http://aistisvm1.cloudapp.net/",
+        "status": "Suspended",
+        "virtual_network": "Two VMs for no purpose"
+      },
+      "id": 12,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "aistisvm1",
+      "remote_id": "d0d5e1556cd04f569b24d242dacb1642",
+      "tag": "azure",
+      "uuid": "d1d79704-fff8-437c-800f-044ef798f06a",
+      "vm_tags": [
+        {
+          "id": 8,
+          "text": "azure",
+          "type": "automatic",
+          "uuid": "3d1d075a-bc1e-46c9-ac1e-21fea339b862"
+        },
+        {
+          "id": 9,
+          "text": "Washington D.C.",
+          "type": "automatic",
+          "uuid": "13398983-66bd-43bd-8ba2-da9745d4c249"
+        }
+      ]
+    },
+    {
+      "account_id": 1,
+      "account_name": "Azure",
+      "account_uuid": "ba14fc73-c04c-40b2-bf56-977e05c62866",
+      "cmdb_id": null,
+      "extra": {
+        "disk_name": "aistisvm2-aistisvm1-0-201410161612050183",
+        "dns_name": "http://aistisvm2.cloudapp.net/",
+        "status": "Suspended",
+        "virtual_network": "InnerVPN"
+      },
+      "id": 13,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "aistisvm1",
+      "remote_id": "a72b5648f15c4b36933c72626dc9f85e",
+      "tag": "azure",
+      "uuid": "583e7488-342d-48a1-9df3-957a8a515d20",
+      "vm_tags": [
+        {
+          "id": 8,
+          "text": "azure",
+          "type": "automatic",
+          "uuid": "3d1d075a-bc1e-46c9-ac1e-21fea339b862"
+        },
+        {
+          "id": 9,
+          "text": "Washington D.C.",
+          "type": "automatic",
+          "uuid": "13398983-66bd-43bd-8ba2-da9745d4c249"
+        }
+      ]
+    },
+    {
+      "account_id": 1,
+      "account_name": "Azure",
+      "account_uuid": "ba14fc73-c04c-40b2-bf56-977e05c62866",
+      "cmdb_id": null,
+      "extra": {
+        "disk_name": "aistisvm3-aistisvm3-0-201410161138330048",
+        "dns_name": "http://aistisvm3.cloudapp.net/",
+        "status": "Suspended",
+        "virtual_network": "InnerVPN"
+      },
+      "id": 14,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "aistisvm3",
+      "remote_id": "c12fec8d260f49048d79db5a6f63f0ec",
+      "tag": "azure",
+      "uuid": "49c40c96-595d-40ac-932a-92b549d004a0",
+      "vm_tags": [
+        {
+          "id": 8,
+          "text": "azure",
+          "type": "automatic",
+          "uuid": "3d1d075a-bc1e-46c9-ac1e-21fea339b862"
+        },
+        {
+          "id": 9,
+          "text": "Washington D.C.",
+          "type": "automatic",
+          "uuid": "13398983-66bd-43bd-8ba2-da9745d4c249"
+        }
+      ]
+    },
+    {
+      "account_id": 1,
+      "account_name": "Azure",
+      "account_uuid": "ba14fc73-c04c-40b2-bf56-977e05c62866",
+      "cmdb_id": null,
+      "extra": {
+        "disk_name": "filchovm1-filchovm1-0-201410070805040704",
+        "dns_name": "http://filchovm1.cloudapp.net/",
+        "status": "Suspended",
+        "virtual_network": ""
+      },
+      "id": 15,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "filchovm1",
+      "remote_id": "87e3fd2564a1492095614054a2270a10",
+      "tag": "azure",
+      "uuid": "0a026f01-3cc0-4c06-a9b8-bc3ddfc4e574",
+      "vm_tags": [
+        {
+          "id": 8,
+          "text": "azure",
+          "type": "automatic",
+          "uuid": "3d1d075a-bc1e-46c9-ac1e-21fea339b862"
+        },
+        {
+          "id": 9,
+          "text": "Washington D.C.",
+          "type": "automatic",
+          "uuid": "13398983-66bd-43bd-8ba2-da9745d4c249"
+        }
+      ]
+    },
+    {
+      "account_id": 1,
+      "account_name": "Azure",
+      "account_uuid": "ba14fc73-c04c-40b2-bf56-977e05c62866",
+      "cmdb_id": null,
+      "extra": {
+        "disk_name": "filchovm2-filchovm2-0-201410071106190372",
+        "dns_name": "http://filchovm2.cloudapp.net/",
+        "status": "Suspended",
+        "virtual_network": ""
+      },
+      "id": 16,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "filchovm2",
+      "remote_id": "9c913531fbe04e8e9198ee01e210ed3e",
+      "tag": "azure",
+      "uuid": "ec473924-9c70-4a18-9713-df2ee3a843f2",
+      "vm_tags": [
+        {
+          "id": 8,
+          "text": "azure",
+          "type": "automatic",
+          "uuid": "3d1d075a-bc1e-46c9-ac1e-21fea339b862"
+        },
+        {
+          "id": 9,
+          "text": "Washington D.C.",
+          "type": "automatic",
+          "uuid": "13398983-66bd-43bd-8ba2-da9745d4c249"
+        }
+      ]
+    },
+    {
+      "account_id": 6,
+      "account_name": "CloudN (Cloudstack)",
+      "account_uuid": "b055a1b1-32ad-4436-b415-c73977b28842",
+      "cmdb_id": null,
+      "extra": {
+        "action": "",
+        "created": "2014-12-24T05:28:30+0900",
+        "haenable": "True",
+        "hypervisor": "KVM",
+        "image_id": "5afa3bc9-df8f-4d43-a91e-c84f8b895721",
+        "image_name": "Ubuntu Server v14.04 64bit",
+        "ip_addresses": [],
+        "ip_forwarding_rules": [],
+        "key_name": null,
+        "password": null,
+        "password_enabled": "True",
+        "port_forwarding_rules": [],
+        "private_ips": "",
+        "project": null,
+        "project_id": null,
+        "public_ips": "153.149.30.10 ",
+        "root_device_id": "0",
+        "root_device_type": "NetworkFilesystem",
+        "security_group": [
+          "default"
+        ],
+        "size_id": "3164027a-3636-4cd5-a8be-f76d51d93a1a",
+        "size_name": "m1.large",
+        "status": "Running",
+        "tags": {},
+        "template_display_text": null,
+        "zone_id": "1b02e74c-6c21-4aa3-b96c-51042de8fccd",
+        "zone_name": "jp-e1a"
+      },
+      "id": 17,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "BespinDemoBackup",
+      "remote_id": "bcc84b95-f89a-4fd9-83b8-14fd2af0097f",
+      "tag": "cloudstack",
+      "uuid": "08d00550-f4ad-45db-988c-a16c8e83a2c1",
+      "vm_tags": [
+        {
+          "id": 10,
+          "text": "cloudstack",
+          "type": "automatic",
+          "uuid": "10d31b5d-da3e-4281-a188-7a1c91b3b86b"
+        },
+        {
+          "id": 11,
+          "text": "New Delhi",
+          "type": "automatic",
+          "uuid": "650f5df7-1f05-47d7-bb22-8d0ac9c7930d"
+        }
+      ]
+    },
+    {
+      "account_id": 6,
+      "account_name": "CloudN (Cloudstack)",
+      "account_uuid": "b055a1b1-32ad-4436-b415-c73977b28842",
+      "cmdb_id": null,
+      "extra": {
+        "action": "",
+        "created": "2014-10-13T20:07:59+0900",
+        "haenable": "True",
+        "hypervisor": "KVM",
+        "image_id": "5afa3bc9-df8f-4d43-a91e-c84f8b895721",
+        "image_name": "Ubuntu Server v14.04 64bit",
+        "ip_addresses": [],
+        "ip_forwarding_rules": [],
+        "key_name": null,
+        "password": null,
+        "password_enabled": "True",
+        "port_forwarding_rules": [],
+        "private_ips": "",
+        "project": null,
+        "project_id": null,
+        "public_ips": "153.128.42.253 ",
+        "root_device_id": "0",
+        "root_device_type": "NetworkFilesystem",
+        "security_group": [
+          "default"
+        ],
+        "size_id": "200c6378-8ae9-4718-9b25-b8c4f6c1dfc8",
+        "size_name": "t1.micro",
+        "status": "Running",
+        "tags": {},
+        "template_display_text": null,
+        "zone_id": "1b02e74c-6c21-4aa3-b96c-51042de8fccd",
+        "zone_name": "jp-e1a"
+      },
+      "id": 18,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "BespinVM1",
+      "remote_id": "e5d5cdd2-e641-4e95-a3ad-72bd11bc8b7c",
+      "tag": "cloudstack",
+      "uuid": "00d56ec2-fcf1-40cb-b947-9f86d99ea8af",
+      "vm_tags": [
+        {
+          "id": 10,
+          "text": "cloudstack",
+          "type": "automatic",
+          "uuid": "10d31b5d-da3e-4281-a188-7a1c91b3b86b"
+        },
+        {
+          "id": 11,
+          "text": "New Delhi",
+          "type": "automatic",
+          "uuid": "650f5df7-1f05-47d7-bb22-8d0ac9c7930d"
+        }
+      ]
+    },
+    {
+      "account_id": 4,
+      "account_name": "Enterprise Cloud (VCD)",
+      "account_uuid": "02d59a60-2261-45f3-ad9f-42f44d7a6c4a",
+      "cmdb_id": null,
+      "extra": {
+        "action": "start",
+        "os_name": "centos-5.8",
+        "os_type": "rhel5_64Guest",
+        "private_ips": "10.0.2.2 ",
+        "public_ips": "10.0.2.2 ",
+        "status": "Stopped",
+        "vapp_id": "73f1687f-e945-4724-909d-1d8030771a44",
+        "vdc": "bespin_vdc_1",
+        "vms": [
+          {
+            "id": "https://210.232.8.99/api/vApp/vm-82381f9a-4036-4ef0-8b13-b3e45ddb4172",
+            "name": "centos-5.8",
+            "os_type": "rhel5_64Guest",
+            "private_ips": [
+              "10.0.2.2"
+            ],
+            "public_ips": [
+              "10.0.2.2"
+            ],
+            "state": 5
+          }
+        ]
+      },
+      "id": 19,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "bespin_vm_1",
+      "remote_id": "https://210.232.8.99/api/vApp/vm-82381f9a-4036-4ef0-8b13-b3e45ddb4172",
+      "tag": "vcd",
+      "uuid": "84fffc16-77e1-4e4b-98a1-781d8145fa8a",
+      "vm_tags": [
+        {
+          "id": 1,
+          "text": "vcd",
+          "type": "automatic",
+          "uuid": "cbdd0170-a0ed-4992-a3d9-2d28c341a8e0"
+        },
+        {
+          "id": 2,
+          "text": "Tokyo",
+          "type": "automatic",
+          "uuid": "ffd00bb1-4686-4efa-9fd6-6e270c54d545"
+        },
+        {
+          "id": 3,
+          "text": "rhel5_64Guest",
+          "type": "automatic",
+          "uuid": "7fdcbaf9-c348-48a8-ac54-5677da1cec1f"
+        }
+      ]
+    },
+    {
+      "account_id": 4,
+      "account_name": "Enterprise Cloud (VCD)",
+      "account_uuid": "02d59a60-2261-45f3-ad9f-42f44d7a6c4a",
+      "cmdb_id": null,
+      "extra": {
+        "action": "",
+        "os_name": "centos-5.8.2",
+        "os_type": "rhel5_64Guest",
+        "private_ips": "10.0.2.2 10.0.2.2 ",
+        "public_ips": "10.0.2.2 10.0.2.2 ",
+        "status": "Pending",
+        "vapp_id": "ca93cf2d-6a7a-4f9e-860e-8ecd7dc2f1f9",
+        "vdc": "bespin_vdc_1",
+        "vms": [
+          {
+            "id": "https://210.232.8.99/api/vApp/vm-a3bfff94-095b-481e-90d8-530d0f359300",
+            "name": "centos-5.8.2",
+            "os_type": "rhel5_64Guest",
+            "private_ips": [
+              "10.0.2.2",
+              "10.0.2.2"
+            ],
+            "public_ips": [
+              "10.0.2.2",
+              "10.0.2.2"
+            ],
+            "state": 3
+          }
+        ]
+      },
+      "id": 20,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "bespin_vm_2",
+      "remote_id": "https://210.232.8.99/api/vApp/vm-a3bfff94-095b-481e-90d8-530d0f359300",
+      "tag": "vcd",
+      "uuid": "d2adaebb-8bb4-40e4-99d3-46a1d47290c7",
+      "vm_tags": [
+        {
+          "id": 1,
+          "text": "vcd",
+          "type": "automatic",
+          "uuid": "cbdd0170-a0ed-4992-a3d9-2d28c341a8e0"
+        },
+        {
+          "id": 2,
+          "text": "Tokyo",
+          "type": "automatic",
+          "uuid": "ffd00bb1-4686-4efa-9fd6-6e270c54d545"
+        },
+        {
+          "id": 3,
+          "text": "rhel5_64Guest",
+          "type": "automatic",
+          "uuid": "7fdcbaf9-c348-48a8-ac54-5677da1cec1f"
+        }
+      ]
+    },
+    {
+      "account_id": 7,
+      "account_name": "HSP (VSphere)",
+      "account_uuid": "1b74a4c0-0110-4ba6-87db-72c8977ab89d",
+      "cmdb_id": null,
+      "extra": {
+        "action": "start",
+        "ip": null,
+        "os_type": "Other (32-bit)",
+        "status": "Stopped"
+      },
+      "id": 22,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "Tiny_OS (c12d3df6-e7aa-4cd5-8db4-25f3764f9168)",
+      "remote_id": "[L2m-CL1-Storage01] Tiny_OS (c12d3df6-e7aa-4cd5-8db4-25f3764f9168)/Tiny_OS (c12d3df6-e7aa-4cd5-8db4-25f3764f9168).vmx",
+      "tag": "vsphere",
+      "uuid": "3a88a230-0426-4fad-8c46-74b61dc04ad0",
+      "vm_tags": [
+        {
+          "id": 2,
+          "text": "Tokyo",
+          "type": "automatic",
+          "uuid": "ffd00bb1-4686-4efa-9fd6-6e270c54d545"
+        },
+        {
+          "id": 12,
+          "text": "vsphere",
+          "type": "automatic",
+          "uuid": "1bc3a3e9-4d78-4cf5-acd6-4be0e4adff25"
+        },
+        {
+          "id": 13,
+          "text": "Other (32-bit)",
+          "type": "automatic",
+          "uuid": "cb3e07f1-2696-4aa4-b673-875c2d89d39d"
+        }
+      ]
+    },
+    {
+      "account_id": 7,
+      "account_name": "HSP (VSphere)",
+      "account_uuid": "1b74a4c0-0110-4ba6-87db-72c8977ab89d",
+      "cmdb_id": null,
+      "extra": {
+        "action": "stop",
+        "ip": null,
+        "os_type": "Other (32-bit)",
+        "status": "Running"
+      },
+      "id": 21,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "Tiny_OS (e5be55c8-89b6-47e4-80d0-7e656fdc48a9)",
+      "remote_id": "[L2m-CL1-Storage01] Tiny_OS (e5be55c8-89b6-47e4-80d0-7e656fdc48a9)/Tiny_OS (e5be55c8-89b6-47e4-80d0-7e656fdc48a9).vmx",
+      "tag": "vsphere",
+      "uuid": "0c9089f4-a9fb-4984-b0e2-ddfe9d742982",
+      "vm_tags": [
+        {
+          "id": 2,
+          "text": "Tokyo",
+          "type": "automatic",
+          "uuid": "ffd00bb1-4686-4efa-9fd6-6e270c54d545"
+        },
+        {
+          "id": 12,
+          "text": "vsphere",
+          "type": "automatic",
+          "uuid": "1bc3a3e9-4d78-4cf5-acd6-4be0e4adff25"
+        },
+        {
+          "id": 13,
+          "text": "Other (32-bit)",
+          "type": "automatic",
+          "uuid": "cb3e07f1-2696-4aa4-b673-875c2d89d39d"
+        }
+      ]
+    },
+    {
+      "account_id": 7,
+      "account_name": "HSP (VSphere)",
+      "account_uuid": "1b74a4c0-0110-4ba6-87db-72c8977ab89d",
+      "cmdb_id": null,
+      "extra": {
+        "action": "stop",
+        "ip": "10.0.2.2",
+        "os_type": "Red Hat Enterprise Linux 5 (64 \u30d3\u30c3\u30c8)",
+        "status": "Running"
+      },
+      "id": 23,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "centos-5.8 (dbf6a0cf-53f0-49d1-9080-0be0ab229746)",
+      "remote_id": "[l2d1-esx-14] centos-5.8 (dbf6a0cf-53f0-49d1-9080-0be0ab229746)/centos-5.8 (dbf6a0cf-53f0-49d1-9080-0be0ab229746).vmx",
+      "tag": "vsphere",
+      "uuid": "e70ab52c-5fb4-4598-ad0b-daab26207ef7",
+      "vm_tags": [
+        {
+          "id": 2,
+          "text": "Tokyo",
+          "type": "automatic",
+          "uuid": "ffd00bb1-4686-4efa-9fd6-6e270c54d545"
+        },
+        {
+          "id": 12,
+          "text": "vsphere",
+          "type": "automatic",
+          "uuid": "1bc3a3e9-4d78-4cf5-acd6-4be0e4adff25"
+        },
+        {
+          "id": 14,
+          "text": "Red Hat Enterprise Linux 5 (64 \u30d3\u30c3\u30c8)",
+          "type": "automatic",
+          "uuid": "1ff9cd5b-309b-485f-bb87-d2085ce2c860"
+        }
+      ]
+    },
+    {
+      "account_id": 8,
+      "account_name": "Managed Hosting",
+      "account_uuid": "1b767fec-04e9-4801-835a-5058edd1b12e",
+      "cmdb_id": "189e310cbd2f4d929c261fa81b25d23a",
+      "extra": {
+        "provider_id": null,
+        "status": "Unknown"
+      },
+      "id": 31,
+      "is_managed": 1,
+      "managed_since": "2015-01-06 16:40:56.132999",
+      "name": "evx4402466",
+      "remote_id": "189e310cbd2f4d929c261fa81b25d23a",
+      "tag": "managed",
+      "uuid": "dd1572ff-f088-4ce3-a7ac-33fd8edcca3c",
+      "vm_tags": [
+        {
+          "id": 20,
+          "text": "managed",
+          "type": "automatic",
+          "uuid": "8e141892-748d-44f6-a438-7b5043db1d42"
+        }
+      ]
+    },
+    {
+      "account_id": 5,
+      "account_name": "Openstack",
+      "account_uuid": "abc33efe-e030-4ad5-a45f-7cd032ba643f",
+      "cmdb_id": null,
+      "extra": {
+        "access_ip": "",
+        "action": "",
+        "availability_zone": "nova",
+        "created": "2014-08-06T16:24:31Z",
+        "disk_config": "MANUAL",
+        "flavorId": "1",
+        "hostId": "c2f0d04b63d33d5cda6d7369a48a8858e2fd54fe1f679c5d2ca96606",
+        "imageId": "3ef420e3-1b85-4d8a-a24a-b8b55635619f",
+        "key_name": null,
+        "metadata": {},
+        "password": null,
+        "private_ips": "10.0.0.2 ",
+        "public_ips": "",
+        "status": "Running",
+        "tenantId": "50d90739fea049a5a28605e807a3261e",
+        "updated": "2014-08-06T16:24:56Z",
+        "uri": "http://os-controller:8774/v2/50d90739fea049a5a28605e807a3261e/servers/fb6f8e86-cd71-4a7c-8422-70c44a697f76"
+      },
+      "id": 25,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "test1",
+      "remote_id": "fb6f8e86-cd71-4a7c-8422-70c44a697f76",
+      "tag": "openstack",
+      "uuid": "768c90ee-46ee-47f4-9f3c-fb432d2e639e",
+      "vm_tags": [
+        {
+          "id": 15,
+          "text": "openstack",
+          "type": "automatic",
+          "uuid": "6860bcb9-6e6a-4954-ad60-f444b688f04b"
+        },
+        {
+          "id": 16,
+          "text": "San Francisco",
+          "type": "automatic",
+          "uuid": "028f21d9-9ebf-4347-877a-37790278ea0a"
+        }
+      ]
+    },
+    {
+      "account_id": 5,
+      "account_name": "Openstack",
+      "account_uuid": "abc33efe-e030-4ad5-a45f-7cd032ba643f",
+      "cmdb_id": null,
+      "extra": {
+        "access_ip": "",
+        "action": "",
+        "availability_zone": "nova",
+        "created": "2014-08-06T16:24:52Z",
+        "disk_config": "MANUAL",
+        "flavorId": "1",
+        "hostId": "c2f0d04b63d33d5cda6d7369a48a8858e2fd54fe1f679c5d2ca96606",
+        "imageId": "3ef420e3-1b85-4d8a-a24a-b8b55635619f",
+        "key_name": null,
+        "metadata": {},
+        "password": null,
+        "private_ips": "10.0.0.3 ",
+        "public_ips": "",
+        "status": "Running",
+        "tenantId": "50d90739fea049a5a28605e807a3261e",
+        "updated": "2014-08-06T16:25:16Z",
+        "uri": "http://os-controller:8774/v2/50d90739fea049a5a28605e807a3261e/servers/86c7862e-29c8-4772-8bf8-b75560cd3015"
+      },
+      "id": 24,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "test2",
+      "remote_id": "86c7862e-29c8-4772-8bf8-b75560cd3015",
+      "tag": "openstack",
+      "uuid": "0a6a31d4-1902-48ef-b8e3-89ecd5e8f829",
+      "vm_tags": [
+        {
+          "id": 15,
+          "text": "openstack",
+          "type": "automatic",
+          "uuid": "6860bcb9-6e6a-4954-ad60-f444b688f04b"
+        },
+        {
+          "id": 16,
+          "text": "San Francisco",
+          "type": "automatic",
+          "uuid": "028f21d9-9ebf-4347-877a-37790278ea0a"
+        }
+      ]
+    },
+    {
+      "account_id": 3,
+      "account_name": "Simplicloud",
+      "account_uuid": "c75e765b-722d-4514-9dcd-0b156248d8c2",
+      "cmdb_id": null,
+      "extra": {
+        "cpu": 1,
+        "disk": 4,
+        "ip_address": "180.179.162.151",
+        "memory": 1024,
+        "os_name": "Other 2.6.x Linux (32-bit)",
+        "status": "Running"
+      },
+      "id": 26,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "5995-MUM-01-V01-0001",
+      "remote_id": "2849",
+      "tag": "simplicloud",
+      "uuid": "868304cc-f8d6-4a52-b643-b3b98708c1a1",
+      "vm_tags": [
+        {
+          "id": 17,
+          "text": "simplicloud",
+          "type": "automatic",
+          "uuid": "d235c161-6da4-4dd5-8cc4-e224382cc5a6"
+        },
+        {
+          "id": 18,
+          "text": "Singapore",
+          "type": "automatic",
+          "uuid": "949cb439-36c5-4282-8cc2-1372e87ccebc"
+        }
+      ]
+    },
+    {
+      "account_id": 3,
+      "account_name": "Simplicloud",
+      "account_uuid": "c75e765b-722d-4514-9dcd-0b156248d8c2",
+      "cmdb_id": null,
+      "extra": {
+        "cpu": null,
+        "disk": 100,
+        "ip_address": "10.30.143.3",
+        "memory": null,
+        "os_name": null,
+        "status": "Running"
+      },
+      "id": 28,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "5995-MUM-01-V01-0003",
+      "remote_id": "2851",
+      "tag": "simplicloud",
+      "uuid": "fcf20b82-703c-4877-98dd-fb3ab96e94c6",
+      "vm_tags": [
+        {
+          "id": 17,
+          "text": "simplicloud",
+          "type": "automatic",
+          "uuid": "d235c161-6da4-4dd5-8cc4-e224382cc5a6"
+        },
+        {
+          "id": 18,
+          "text": "Singapore",
+          "type": "automatic",
+          "uuid": "949cb439-36c5-4282-8cc2-1372e87ccebc"
+        }
+      ]
+    },
+    {
+      "account_id": 3,
+      "account_name": "Simplicloud",
+      "account_uuid": "c75e765b-722d-4514-9dcd-0b156248d8c2",
+      "cmdb_id": null,
+      "extra": {
+        "cpu": 4,
+        "disk": 40,
+        "ip_address": "180.179.171.49",
+        "memory": 4096,
+        "os_name": "CentOS 4/5/6 (64-bit)",
+        "status": "Running"
+      },
+      "id": 27,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "5995-MUM-01-V03-0002",
+      "remote_id": "2850",
+      "tag": "simplicloud",
+      "uuid": "3e34a4c9-0d8e-4824-9881-28302fe8c0da",
+      "vm_tags": [
+        {
+          "id": 17,
+          "text": "simplicloud",
+          "type": "automatic",
+          "uuid": "d235c161-6da4-4dd5-8cc4-e224382cc5a6"
+        },
+        {
+          "id": 18,
+          "text": "Singapore",
+          "type": "automatic",
+          "uuid": "949cb439-36c5-4282-8cc2-1372e87ccebc"
+        }
+      ]
+    },
+    {
+      "account_id": 9,
+      "account_name": "mock",
+      "account_uuid": "4247eefa-6c3e-4f0c-85ba-96d07c7c8126",
+      "cmdb_id": null,
+      "extra": {
+        "action": "stop",
+        "status": "Running"
+      },
+      "id": 29,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "Test VM 1",
+      "remote_id": "ca325787-0278-49a4-8d0f-574748cadf33",
+      "tag": "mock",
+      "uuid": "b5865821-97e0-481f-9bf6-3b47daa6677c",
+      "vm_tags": [
+        {
+          "id": 19,
+          "text": "mock",
+          "type": "automatic",
+          "uuid": "5bdd86f7-b2a2-4a36-8fb3-e8f2c5f79d39"
+        }
+      ]
+    },
+    {
+      "account_id": 9,
+      "account_name": "mock",
+      "account_uuid": "4247eefa-6c3e-4f0c-85ba-96d07c7c8126",
+      "cmdb_id": null,
+      "extra": {
+        "action": "start",
+        "status": "Stopped"
+      },
+      "id": 30,
+      "is_managed": 0,
+      "managed_since": null,
+      "name": "Test VM 2",
+      "remote_id": "ca325787-0278-49a4-8d0f-574748cadf34",
+      "tag": "mock",
+      "uuid": "329c7bb1-e95f-4483-ba29-d9699ce5ab42",
+      "vm_tags": [
+        {
+          "id": 19,
+          "text": "mock",
+          "type": "automatic",
+          "uuid": "5bdd86f7-b2a2-4a36-8fb3-e8f2c5f79d39"
+        }
+      ]
+    }
+  ]
+}

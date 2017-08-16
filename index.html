@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bespin Tutorial - Mk.II</title>
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand logo">Bespin Tutorial</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="js-app" class="app container-fluid">
+        <div class="row">
+            <div id="accounts-list-wrapper-container" class="col-md-3"></div>
+            <div id="account-details-wrapper-container" class="col-md-3"></div>
+            <div id="vm-list-wrapper-container" class="col-md-3"></div>
+            <div id="vm-details-wrapper-container" class="col-md-3"></div>
+        </div>
+    </div>
+    
+    <!-- --------- -->
+    <!-- TEMPLATES -->
+    <!-- --------- -->
+
+    <!-- Accounts List Wrapper -->
+    <script type="text/template" id="accounts-list-wrapper">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Accounts</h3>
+            </div>
+            <div class="panel-body">
+                <ul class='accounts-list list-group'></ul>
+            </div>
+        </div>
+    </script>
+    
+    <!-- Accounts List Item -->
+    <script type="text/template" id="account-list-item">
+        <a href="#accounts/<%= uuid %>">
+            <span class="name"><%= name %></span> <span class="location"><%= location %></span>
+        </a>
+    </script>
+    
+    <!-- Account Details Wrapper -->
+    <script type="text/template" id="account-details-wrapper">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Account: <%= name %></h3>
+            </div>
+            <div class="panel-body">
+                <ul class='account-params-list list-group'></ul>
+            </div>
+        </div>
+    </script>
+    
+    <!-- Account Parameter Item -->
+    <script type="text/template" id="account-param-item">
+        <li class="list-group-item">
+            <span class="key"><%= key %></span>: <span class="value"><%= value %></span>
+        </li>
+    </script>
+    
+    <!-- VM List Wrapper -->
+    <script type="text/template" id="vm-list-wrapper">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Virtual Machines</h3>
+            </div>
+            <div class="panel-body">
+                <ul class='vms-list list-group'></ul>
+            </div>
+        </div>
+    </script>
+
+    <!-- VM List Item -->
+    <script type="text/template" id="vm-list-item">
+        <a href="#accounts/<%= account_uuid %>/vm/<%= uuid %>">
+            <span class="name"><%= name %></span> <span class="status"><%= extra.status %></span>
+        </a>
+    </script>
+
+    <!-- VM Details Wrapper -->
+    <script type="text/template" id="vm-details-wrapper">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Account: <%= name %></h3>
+            </div>
+            <div class="panel-body">
+                <ul class='vm-param-list list-group'></ul>
+            </div>
+        </div>
+    </script>
+    <!-- VM Parameter Item -->
+    <script type="text/template" id="vm-param-item">
+        <li class="list-group-item">
+            <span class="key"><%= key %></span>: <span class="value"><%= value %></span>
+        </li>
+    </script>
+
+    <script src="assets/jquery-3.2.1.js"></script>
+    <script src="assets/underscore.js"></script>
+    <script src="assets/backbone.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+</html>
