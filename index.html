@@ -34,6 +34,7 @@
     <!-- TEMPLATES -->
     <!-- --------- -->
 
+    <!-- COLUMN ONE -->
     <!-- Accounts List Wrapper -->
     <script type="text/template" id="accounts-list-wrapper">
         <div class="panel panel-default">
@@ -45,33 +46,30 @@
             </div>
         </div>
     </script>
-    
     <!-- Accounts List Item -->
     <script type="text/template" id="account-list-item">
         <a href="#accounts/<%= uuid %>">
             <span class="name"><%= name %></span> <span class="location"><%= location %></span>
         </a>
     </script>
-    
+
+    <!-- COLUMN TWO -->
     <!-- Account Details Wrapper -->
     <script type="text/template" id="account-details-wrapper">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">Account: <%= name %></h3>
             </div>
-            <div class="panel-body">
-                <ul class='account-params-list list-group'></ul>
+            <div class="panel-body account-params-list">
             </div>
         </div>
     </script>
-    
     <!-- Account Parameter Item -->
     <script type="text/template" id="account-param-item">
-        <li class="list-group-item">
-            <span class="key"><%= key %></span>: <span class="value"><%= value %></span>
-        </li>
+        <span class="name"><%= name %></span>: <span class="value"><%= value %></span>
     </script>
-    
+
+    <!-- COLUMN THREE -->
     <!-- VM List Wrapper -->
     <script type="text/template" id="vm-list-wrapper">
         <div class="panel panel-default">
@@ -83,7 +81,6 @@
             </div>
         </div>
     </script>
-
     <!-- VM List Item -->
     <script type="text/template" id="vm-list-item">
         <a href="#accounts/<%= account_uuid %>/vm/<%= uuid %>">
@@ -91,6 +88,7 @@
         </a>
     </script>
 
+    <!-- COLUMN FOUR -->
     <!-- VM Details Wrapper -->
     <script type="text/template" id="vm-details-wrapper">
         <div class="panel panel-default">
@@ -102,7 +100,6 @@
             </div>
         </div>
     </script>
-    
     <!-- VM Parameter Item -->
     <script type="text/template" id="vm-param-item">
         <li class="list-group-item">

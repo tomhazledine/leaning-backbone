@@ -79,41 +79,23 @@ vmsCollection.fetch({
  * ----------------
  */
 
+// Setup a view for account list items
+var AccountItemView = Backbone.Marionette.ItemView.extend({
+    template: _.template($('#account-list-item').html()),
+    tagName: 'li',
+    className: 'list-group-item'
+});
+
 // Setup an accounts view
-var AccountsView = Backbone.View.extend({
+var AccountsView = Backbone.Marionette.CompositeView.extend({
     template: _.template($('#accounts-list-wrapper').html()),
-    initialize: function() {
-        this.listenToOnce(this.collection, 'sync', this.render)
-    },
-    renderListItem: function(model) {
-        var item = new AccountItemView({model: model});
-        $('.accounts-list', this.$el).append(item.render().el);
-    },
-    render: function() {
-        var self = this;
-        this.$el.html(this.template());
-        this.collection.each(function(account){
-            self.renderListItem(account);
-        });
-        return this;
-    }
+    childView: AccountItemView,
+    childViewContainer: '.accounts-list'
 });
 
 // Create a new accounts view, and link it to the accounts collection
 var accountsView = new AccountsView({
     collection: accountsCollection
-});
-
-// Setup a view for account list items
-var AccountItemView = Backbone.View.extend({
-    template: _.template($('#account-list-item').html()),
-    tagName: 'li',
-    className: 'list-group-item',
-    render: function() {
-        var $el = $(this.el);
-        $el.html(this.template(this.model.toJSON()));
-        return this;
-    }
 });
 
 /**
@@ -126,21 +108,45 @@ var AccountItemView = Backbone.View.extend({
  * -----------------
  */
 
-var AccountDetailsView = Backbone.View.extend({
+var ParamView = Backbone.Marionette.ItemView.extend({
+    template: _.template($('#account-param-item').html()),
+    tagName: 'li',
+    className: 'list-group-item',
+})
+var ParamsView = Backbone.Marionette.CollectionView.extend({
     template: _.template($('#account-details-wrapper').html()),
-    credentialTemplate: _.template($('#account-param-item').html()),
-    renderParam: function(key, value) {
-        var $el = $('.account-params-list', this.$el);
-        $el.append(this.credentialTemplate({key:key, value:value}));
+    tagName: 'ul',
+    className: 'list-group',
+    childView: ParamView
+});
+
+var AccountDetailsView = Backbone.Marionette.LayoutView.extend({
+    template: _.template($('#account-details-wrapper').html()),
+    credentials: null,
+    regions: {
+        paramList: '.account-params-list'
     },
-    render: function(options) {
-        var self = this,
-            model = this.model.toJSON();
-        $(this.el).html(this.template(model));
-        _.each(model.parameterized_credentials, function(value, key) {
-            self.renderParam(key, value);
+    modelEvents: {
+        'change': 'updateCredentials'
+    },
+    initialize: function() {
+        this.credentials = new Backbone.Collection();
+        this.updateCredentials();
+    },
+    onShow: function() {
+        this.paramList.show(new ParamsView({
+            collection: this.credentials
+        }));
+    },
+    updateCredentials: function() {
+        var data = [];
+        _.each(this.model.get('parameterized_credentials'), function(value,key) {
+            data.push({
+                'name': key,
+                'value': value
+            });
         });
-        return this;
+        this.credentials.reset(data);
     }
 });
 
@@ -235,9 +241,10 @@ var Router = Backbone.Router.extend({
     },
     viewVirtualMachine: function(accountId,vmId) {
 
-        // First, make sure that columns 1, 2, & 3 have been shown
+        // First, make sure that columns 1, 2, & 3 have been shown.
         this.viewAccount(accountId);
 
+        // Filter the VMs collection, and display the results in column 4.
         var filteredVmMmodel = vmsCollection.findWhere({ uuid: vmId });
         vmView = new VirtualMachineDetailsView({ model: filteredVmMmodel });
         $('#vm-details-wrapper-container').html(vmView.render().el);
@@ -245,32 +252,29 @@ var Router = Backbone.Router.extend({
     },
     viewAccount: function(accountId) {
         
-        // First, make sure that column 1 has been shown
+        // First, make sure that column 1 has been shown.
         this.viewAccounts();
 
-        // Filter the accounts collection to create a model for column 2
+        // Filter the accounts collection, and display the results in column 2.
         var model = accountsCollection.findWhere({ uuid: accountId });
-        // Create a new view, using the filtered model
         accountView = new AccountDetailsView({ model: model });
-        // Show that view on the screen
         $('#account-details-wrapper-container').html(accountView.render().el);
+        accountView.triggerMethod('show');
 
-        // Filter the VMs to create a collection for column 3
+        // Filter the VMs collection, and display the results in column 3.
         var filteredCollection = vmsCollection.where({ account_uuid: accountId });
-        // Create a view for the VM list
         vmListView = new VirtualMachineListView({ collection: filteredCollection });
-        // Show that view on the screen
         $('#vm-list-wrapper-container').html(vmListView.render().el);
 
     },
     viewAccounts: function() {
         
-        // Clear unwanted columns
+        // Clear unwanted columns.
         if (accountView) { accountView.remove(); }
         if (vmListView) { vmListView.remove(); }
         if (vmView) { vmView.remove(); }
 
-        // Show column 1
+        // Show column 1.
         $('#accounts-list-wrapper-container').html(accountsView.render().el);
 
     }
