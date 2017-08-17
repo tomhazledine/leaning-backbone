@@ -71,6 +71,26 @@ vmsCollection.fetch({
 });
 
 /**
+ * -------------
+ * MASTER LAYOUT
+ *
+ * Container for
+ * all app-based
+ * content.
+ * -------------
+ */
+
+var MainLayout = Backbone.Marionette.LayoutView.extend({
+    template: _.template($('#app-container').html()),
+    regions: {
+        accounts: '#accounts-list-wrapper-container',
+        account: '#account-details-wrapper-container',
+        vms: '#vm-list-wrapper-container',
+        vm: '#vm-details-wrapper-container'
+    }
+});
+
+/**
  * ----------------
  * COLUMN ONE
  *
@@ -93,10 +113,10 @@ var AccountsView = Backbone.Marionette.CompositeView.extend({
     childViewContainer: '.accounts-list'
 });
 
-// Create a new accounts view, and link it to the accounts collection
-var accountsView = new AccountsView({
-    collection: accountsCollection
-});
+// // Create a new accounts view, and link it to the accounts collection
+// var accountsView = new AccountsView({
+//     collection: accountsCollection
+// });
 
 /**
  * -----------------
@@ -229,6 +249,12 @@ var VirtualMachineDetailsView = Backbone.View.extend({
  * ----------------------
  */
 
+// Create a new accounts view, and link it to the accounts collection
+var accountsView = new AccountsView({
+    collection: accountsCollection
+});
+
+var mainLayout;
 var accountView;
 var vmListView;
 var vmView;
@@ -275,9 +301,12 @@ var Router = Backbone.Router.extend({
         if (vmView) { vmView.remove(); }
 
         // Show column 1.
-        $('#accounts-list-wrapper-container').html(accountsView.render().el);
+        mainLayout.accounts.show(accountsView);
+        // $('#accounts-list-wrapper-container').html(accountsView.render().el);
 
     }
 });
+mainLayout = new MainLayout();
+$('#master-app').html(mainLayout.render().el);
 
 new Router();

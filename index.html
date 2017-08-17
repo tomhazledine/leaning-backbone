@@ -21,18 +21,22 @@
         </div>
     </div>
 
-    <div id="js-app" class="app container-fluid">
-        <div class="row">
-            <div id="accounts-list-wrapper-container" class="col-md-3"></div>
-            <div id="account-details-wrapper-container" class="col-md-3"></div>
-            <div id="vm-list-wrapper-container" class="col-md-3"></div>
-            <div id="vm-details-wrapper-container" class="col-md-3"></div>
-        </div>
+    <div id="master-app" class="app container-fluid">
     </div>
     
     <!-- --------- -->
     <!-- TEMPLATES -->
     <!-- --------- -->
+
+    <!-- MASTER LAYOUT -->
+    <script type="text/template" id="app-container">
+         <div class="row">
+             <div id="accounts-list-wrapper-container" class="col-md-3"></div>
+             <div id="account-details-wrapper-container" class="col-md-3"></div>
+             <div id="vm-list-wrapper-container" class="col-md-3"></div>
+             <div id="vm-details-wrapper-container" class="col-md-3"></div>
+         </div>
+    </script>
 
     <!-- COLUMN ONE -->
     <!-- Accounts List Wrapper -->
