@@ -284,13 +284,15 @@ var Router = Backbone.Router.extend({
         // Filter the accounts collection, and display the results in column 2.
         var model = accountsCollection.findWhere({ uuid: accountId });
         accountView = new AccountDetailsView({ model: model });
-        $('#account-details-wrapper-container').html(accountView.render().el);
-        accountView.triggerMethod('show');
+        // $('#account-details-wrapper-container').html(accountView.render().el);
+        // accountView.triggerMethod('show');
+        mainLayout.account.show(accountView);
 
         // Filter the VMs collection, and display the results in column 3.
         var filteredCollection = vmsCollection.where({ account_uuid: accountId });
         vmListView = new VirtualMachineListView({ collection: filteredCollection });
-        $('#vm-list-wrapper-container').html(vmListView.render().el);
+        // $('#vm-list-wrapper-container').html(vmListView.render().el);
+        mainLayout.vms.show(vmListView);
 
     },
     viewAccounts: function() {
