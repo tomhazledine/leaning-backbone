@@ -4,16 +4,16 @@
  * ---------
  */
 
-var data_loaded = {
-    accounts: false,
-    vms: false
-}
+// var data_loaded = {
+//     accounts: false,
+//     vms: false
+// }
 
-function startHistory(){
-    if (data_loaded.accounts && data_loaded.vms) {
-        Backbone.history.start();
-    }
-}
+// function startHistory(){
+//     if (data_loaded.accounts && data_loaded.vms) {
+//         Backbone.history.start();
+//     }
+// }
 
 /**
  * ------------
@@ -46,29 +46,29 @@ var VirtualMachineCollection = Backbone.Collection.extend({
     }
 });
 
-// Create an instance of a the collections
-var accountsCollection = new AccountCollection();
-var vmsCollection = new VirtualMachineCollection();
+// // Create an instance of a the collections
+// var accountsCollection = new AccountCollection();
+// var vmsCollection = new VirtualMachineCollection();
 
-// Get the data for the collections
-accountsCollection.fetch({
-    success: function(collection) {
-        data_loaded.accounts = true;
-        startHistory();
-    },
-    error: function() {
-        console.log('error loading accounts ', arguments);
-    }
-});
-vmsCollection.fetch({
-    success: function(collection,options) {
-        data_loaded.vms = true;
-        startHistory();
-    },
-    error: function() {
-        console.log('error loading vm data ', arguments);
-    }
-});
+// // Get the data for the collections
+// accountsCollection.fetch({
+//     success: function(collection) {
+//         data_loaded.accounts = true;
+//         startHistory();
+//     },
+//     error: function() {
+//         console.log('error loading accounts ', arguments);
+//     }
+// });
+// vmsCollection.fetch({
+//     success: function(collection,options) {
+//         data_loaded.vms = true;
+//         startHistory();
+//     },
+//     error: function() {
+//         console.log('error loading vm data ', arguments);
+//     }
+// });
 
 /**
  * -------------
@@ -82,6 +82,7 @@ vmsCollection.fetch({
 
 var MainLayout = Backbone.Marionette.LayoutView.extend({
     template: _.template($('#app-container').html()),
+    el: '#master-app',
     regions: {
         accounts: '#accounts-list-wrapper-container',
         account: '#account-details-wrapper-container',
@@ -248,67 +249,109 @@ var VirtualMachineDetailsView = Backbone.View.extend({
  * called.
  * ----------------------
  */
-
-// Create a new accounts view, and link it to the accounts collection
-var accountsView = new AccountsView({
-    collection: accountsCollection
-});
-
-var mainLayout;
-var accountView;
-var vmListView;
-var vmView;
-
-var Router = Backbone.Router.extend({
-    routes: {
-        "accounts/:uuid/vm/:vmuuid": "viewVirtualMachine",
-        "accounts/:uuid": "viewAccount",
-        "*other": "viewAccounts"
+var App = new Backbone.Marionette.Application({
+    
+    accountsView: null,
+    vmListView: null,
+    vmView: null,
+    mainLayout: null,
+    accountsCollection: null,
+    vmsCollection: null,
+    data_loaded: {
+        accounts: false,
+        vms: false
     },
+
+    onBeforeStart: function() {
+        this.router = new Marionette.AppRouter({
+            appRoutes: {
+                "accounts/:uuid/vm/:vmuuid": "viewVirtualMachine",
+                "accounts/:uuid": "viewAccount",
+                "*other": "viewAccounts"
+            },
+            controller: this
+        });
+    },
+
+    onStart: function() {
+        this.createCollections();
+        this.createViews();
+    },
+
+    startHistory: function() {
+        if (this.data_loaded.accounts && this.data_loaded.vms) {
+            Backbone.history.start();
+        }
+    },
+
+    createCollections: function() {
+        var self = this;
+        this.accountsCollection = new AccountCollection();
+        this.vmsCollection = new VirtualMachineCollection();
+        // Get the data for the collections
+        this.accountsCollection.fetch({
+            success: function(collection) {
+                self.data_loaded.accounts = true;
+                self.startHistory();
+            },
+            error: function() {
+                console.log('error loading accounts ', arguments);
+            }
+        });
+        this.vmsCollection.fetch({
+            success: function(collection,options) {
+                self.data_loaded.vms = true;
+                self.startHistory();
+            },
+            error: function() {
+                console.log('error loading vm data ', arguments);
+            }
+        });
+    },
+
+    createViews: function() {
+        this.accountsView = new AccountsView({
+            collection: this.accountsCollection
+        });
+        this.mainLayout = new MainLayout();
+        this.mainLayout.render();
+    },
+
     viewVirtualMachine: function(accountId,vmId) {
 
         // First, make sure that columns 1, 2, & 3 have been shown.
         this.viewAccount(accountId);
 
         // Filter the VMs collection, and display the results in column 4.
-        var filteredVmMmodel = vmsCollection.findWhere({ uuid: vmId });
-        vmView = new VirtualMachineDetailsView({ model: filteredVmMmodel });
-        $('#vm-details-wrapper-container').html(vmView.render().el);
-
+        var filteredVmMmodel = this.vmsCollection.findWhere({ uuid: vmId });
+        this.vmView = new VirtualMachineDetailsView({ model: filteredVmMmodel });
+        this.mainLayout.vm.show(this.vmView);
     },
+
     viewAccount: function(accountId) {
-        
-        // First, make sure that column 1 has been shown.
         this.viewAccounts();
 
         // Filter the accounts collection, and display the results in column 2.
-        var model = accountsCollection.findWhere({ uuid: accountId });
-        accountView = new AccountDetailsView({ model: model });
-        // $('#account-details-wrapper-container').html(accountView.render().el);
-        // accountView.triggerMethod('show');
-        mainLayout.account.show(accountView);
+        var model = this.accountsCollection.findWhere({ uuid: accountId });
+        this.accountView = new AccountDetailsView({ model: model });
+        this.mainLayout.account.show(this.accountView);
 
         // Filter the VMs collection, and display the results in column 3.
-        var filteredCollection = vmsCollection.where({ account_uuid: accountId });
-        vmListView = new VirtualMachineListView({ collection: filteredCollection });
-        // $('#vm-list-wrapper-container').html(vmListView.render().el);
-        mainLayout.vms.show(vmListView);
-
+        var filteredCollection = this.vmsCollection.where({ account_uuid: accountId });
+        this.vmListView = new VirtualMachineListView({ collection: filteredCollection });
+        this.mainLayout.vms.show(this.vmListView);
     },
+
     viewAccounts: function() {
-        
-        // Clear unwanted columns.
-        if (accountView) { accountView.remove(); }
-        if (vmListView) { vmListView.remove(); }
-        if (vmView) { vmView.remove(); }
-
         // Show column 1.
-        mainLayout.accounts.show(accountsView);
-        // $('#accounts-list-wrapper-container').html(accountsView.render().el);
+        this.mainLayout.accounts.show(this.accountsView);
 
+        // Clear unwanted columns.
+        if (this.accountView) { this.accountView.remove(); }
+        if (this.vmListView) { this.vmListView.remove(); }
+        if (this.vmView) { this.vmView.remove(); }
     }
-});
-mainLayout = new MainLayout();
-$('#master-app').html(mainLayout.render().el);
 
-new Router();
+
+});
+App.start();
