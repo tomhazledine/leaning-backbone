@@ -3,7 +3,7 @@ define([
     
     'app/views/mainlayout',
     'app/views/accounts',
-    'app/views/params',
+    'app/views/accountdetails',
     'app/views/virtualmachinelist',
     'app/views/virtualmachinedetails',
     
@@ -12,7 +12,7 @@ define([
     
     MainLayout,
     AccountsView,
-    ParamsView,
+    AccountDetailsView,
     VirtualMachineListView,
     VirtualMachineDetailsView
 
@@ -49,36 +49,6 @@ define([
         }
     });
 
-    var AccountDetailsView = Marionette.LayoutView.extend({
-        template: _.template($('#account-details-wrapper').html()),
-        credentials: null,
-        regions: {
-            paramList: '.account-params-list'
-        },
-        modelEvents: {
-            'change': 'updateCredentials'
-        },
-        initialize: function() {
-            this.credentials = new Backbone.Collection();
-            this.updateCredentials();
-        },
-        onShow: function() {
-            this.paramList.show(new ParamsView({
-                collection: this.credentials
-            }));
-        },
-        updateCredentials: function() {
-            var data = [];
-            _.each(this.model.get('parameterized_credentials'), function(value,key) {
-                data.push({
-                    'name': key,
-                    'value': value
-                });
-            });
-            this.credentials.reset(data);
-        }
-    });
-    
     /**
      * ----------------------
      * ROUTING
