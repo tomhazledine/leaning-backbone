@@ -8,11 +8,20 @@ requirejs.config({
     // the paths config could be for a directory.
     paths: {
         app: '../app'
+    },
+    // Setup aliases
+    map: {
+        '*': {
+            'masterapp': 'app/app',
+            'underscore': 'underscore',
+            'backbone': 'backbone',
+            'marionette': 'backbone.marionette'
+        }
     }
 });
 
 // Start the main app logic.
-requirejs(['app/app'],
+requirejs(['masterapp'],
 function (MyApp) {
 
     MyApp.app.start();

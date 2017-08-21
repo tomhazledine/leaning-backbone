@@ -1,4 +1,4 @@
-define(['jquery','underscore','backbone','backbone.marionette'],function ($) {
+define(['jquery','underscore','backbone','marionette'],function ($) {
 
     /**
      * ------------
