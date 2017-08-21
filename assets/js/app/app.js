@@ -6,6 +6,7 @@ define([
     'app/views/accountdetails',
     'app/views/virtualmachinelist',
     'app/views/virtualmachinedetails',
+    'app/collections/collections'
     
 ],function (
     $,_,Backbone,Marionette,
@@ -14,40 +15,13 @@ define([
     AccountsView,
     AccountDetailsView,
     VirtualMachineListView,
-    VirtualMachineDetailsView
+    VirtualMachineDetailsView,
+    Collections
 
 ) {
 
-    /**
-     * ------------
-     * GET THE DATA
-     *
-     * Retrieve the
-     * data held in
-     * the external
-     * JSON files.
-     * ------------
-     */
-
-    // Init the models
-    var AccountModel = Backbone.Model.extend({});
-    var VirtualMachineModel = Backbone.Model.extend({});
-
-    // Setup the collections' data
-    var AccountCollection = Backbone.Collection.extend({
-        url: 'data/accounts.json',
-        model: AccountModel,
-        parse : function(resp) {
-            return resp.accounts;
-        }
-    });
-    var VirtualMachineCollection = Backbone.Collection.extend({
-        url: 'data/vms.json',
-        model: VirtualMachineModel,
-        parse : function(resp) {
-            return resp.vms;
-        }
-    });
+    var AccountCollection = Collections.AccountCollection;
+    var VirtualMachineCollection = Collections.VirtualMachineCollection;
 
     /**
      * ----------------------
