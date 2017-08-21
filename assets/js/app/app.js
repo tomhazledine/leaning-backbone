@@ -1,4 +1,4 @@
-define(['jquery','underscore','backbone','marionette'],function ($) {
+define(['jquery','underscore','backbone','marionette'],function ($,_,Backbone,Marionette) {
 
     /**
      * ------------
@@ -41,7 +41,7 @@ define(['jquery','underscore','backbone','marionette'],function ($) {
      * -------------
      */
 
-    var MainLayout = Backbone.Marionette.LayoutView.extend({
+    var MainLayout = Marionette.LayoutView.extend({
         template: _.template($('#app-container').html()),
         el: '#master-app',
         regions: {
@@ -62,14 +62,14 @@ define(['jquery','underscore','backbone','marionette'],function ($) {
      */
 
     // Setup a view for account list items
-    var AccountItemView = Backbone.Marionette.ItemView.extend({
+    var AccountItemView = Marionette.ItemView.extend({
         template: _.template($('#account-list-item').html()),
         tagName: 'li',
         className: 'list-group-item'
     });
 
     // Setup an accounts view
-    var AccountsView = Backbone.Marionette.CompositeView.extend({
+    var AccountsView = Marionette.CompositeView.extend({
         template: _.template($('#accounts-list-wrapper').html()),
         childView: AccountItemView,
         childViewContainer: '.accounts-list'
@@ -85,19 +85,19 @@ define(['jquery','underscore','backbone','marionette'],function ($) {
      * -----------------
      */
 
-    var ParamView = Backbone.Marionette.ItemView.extend({
+    var ParamView = Marionette.ItemView.extend({
         template: _.template($('#account-param-item').html()),
         tagName: 'li',
         className: 'list-group-item',
     })
-    var ParamsView = Backbone.Marionette.CollectionView.extend({
+    var ParamsView = Marionette.CollectionView.extend({
         template: _.template($('#account-details-wrapper').html()),
         tagName: 'ul',
         className: 'list-group',
         childView: ParamView
     });
 
-    var AccountDetailsView = Backbone.Marionette.LayoutView.extend({
+    var AccountDetailsView = Marionette.LayoutView.extend({
         template: _.template($('#account-details-wrapper').html()),
         credentials: null,
         regions: {
@@ -205,7 +205,7 @@ define(['jquery','underscore','backbone','marionette'],function ($) {
      * called.
      * ----------------------
      */
-    var App = new Backbone.Marionette.Application({
+    var App = new Marionette.Application({
         
         accountsView: null,
         vmListView: null,
