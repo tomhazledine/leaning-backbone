@@ -1,23 +1,6 @@
 define(['jquery','underscore','backbone','backbone.marionette'],function ($) {
 
     /**
-     * ---------
-     * UTILITIES
-     * ---------
-     */
-
-    // var data_loaded = {
-    //     accounts: false,
-    //     vms: false
-    // }
-
-    // function startHistory(){
-    //     if (data_loaded.accounts && data_loaded.vms) {
-    //         Backbone.history.start();
-    //     }
-    // }
-
-    /**
      * ------------
      * GET THE DATA
      *
@@ -47,30 +30,6 @@ define(['jquery','underscore','backbone','backbone.marionette'],function ($) {
             return resp.vms;
         }
     });
-
-    // // Create an instance of a the collections
-    // var accountsCollection = new AccountCollection();
-    // var vmsCollection = new VirtualMachineCollection();
-
-    // // Get the data for the collections
-    // accountsCollection.fetch({
-    //     success: function(collection) {
-    //         data_loaded.accounts = true;
-    //         startHistory();
-    //     },
-    //     error: function() {
-    //         console.log('error loading accounts ', arguments);
-    //     }
-    // });
-    // vmsCollection.fetch({
-    //     success: function(collection,options) {
-    //         data_loaded.vms = true;
-    //         startHistory();
-    //     },
-    //     error: function() {
-    //         console.log('error loading vm data ', arguments);
-    //     }
-    // });
 
     /**
      * -------------
@@ -115,11 +74,6 @@ define(['jquery','underscore','backbone','backbone.marionette'],function ($) {
         childView: AccountItemView,
         childViewContainer: '.accounts-list'
     });
-
-    // // Create a new accounts view, and link it to the accounts collection
-    // var accountsView = new AccountsView({
-    //     collection: accountsCollection
-    // });
 
     /**
      * -----------------
