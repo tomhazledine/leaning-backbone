@@ -1,0 +1,22 @@
+{
+  "name": "new-starter-form",
+  "version": "1.0.0",
+  "description": "New starter excercises for HF",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomhazledine/HF-form-exercise"
+  },
+  "author": "@thomashazledine",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-requirejs": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-sass-lint": "^0.2.2"
+  }
+}
