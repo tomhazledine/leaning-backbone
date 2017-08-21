@@ -1,4 +1,22 @@
-define(['jquery','underscore','backbone','marionette'],function ($,_,Backbone,Marionette) {
+define([
+    'jquery','underscore','backbone','marionette',
+    
+    'app/views/mainlayout',
+    'app/views/accounts',
+    'app/views/params',
+    'app/views/virtualmachinelist',
+    'app/views/virtualmachinedetails',
+    
+],function (
+    $,_,Backbone,Marionette,
+    
+    MainLayout,
+    AccountsView,
+    ParamsView,
+    VirtualMachineListView,
+    VirtualMachineDetailsView
+
+) {
 
     /**
      * ------------
@@ -31,72 +49,6 @@ define(['jquery','underscore','backbone','marionette'],function ($,_,Backbone,Ma
         }
     });
 
-    /**
-     * -------------
-     * MASTER LAYOUT
-     *
-     * Container for
-     * all app-based
-     * content.
-     * -------------
-     */
-
-    var MainLayout = Marionette.LayoutView.extend({
-        template: _.template($('#app-container').html()),
-        el: '#master-app',
-        regions: {
-            accounts: '#accounts-list-wrapper-container',
-            account: '#account-details-wrapper-container',
-            vms: '#vm-list-wrapper-container',
-            vm: '#vm-details-wrapper-container'
-        }
-    });
-
-    /**
-     * ----------------
-     * COLUMN ONE
-     *
-     * A clickable list
-     * of accounts.
-     * ----------------
-     */
-
-    // Setup a view for account list items
-    var AccountItemView = Marionette.ItemView.extend({
-        template: _.template($('#account-list-item').html()),
-        tagName: 'li',
-        className: 'list-group-item'
-    });
-
-    // Setup an accounts view
-    var AccountsView = Marionette.CompositeView.extend({
-        template: _.template($('#accounts-list-wrapper').html()),
-        childView: AccountItemView,
-        childViewContainer: '.accounts-list'
-    });
-
-    /**
-     * -----------------
-     * THE SECOND COLUMN
-     *
-     * Show a panel with
-     * details for any
-     * selected account.
-     * -----------------
-     */
-
-    var ParamView = Marionette.ItemView.extend({
-        template: _.template($('#account-param-item').html()),
-        tagName: 'li',
-        className: 'list-group-item',
-    })
-    var ParamsView = Marionette.CollectionView.extend({
-        template: _.template($('#account-details-wrapper').html()),
-        tagName: 'ul',
-        className: 'list-group',
-        childView: ParamView
-    });
-
     var AccountDetailsView = Marionette.LayoutView.extend({
         template: _.template($('#account-details-wrapper').html()),
         credentials: null,
@@ -126,76 +78,7 @@ define(['jquery','underscore','backbone','marionette'],function ($,_,Backbone,Ma
             this.credentials.reset(data);
         }
     });
-
-    /**
-     * ----------------
-     * THE THIRD COLUMN
-     *
-     * Show list of the
-     * Virtual Machines
-     * connected to the
-     * selected account
-     * ----------------
-     */
-
-    var VirtualMachineListView = Backbone.View.extend({
-        template: _.template($('#vm-list-wrapper').html()),
-        renderListItem: function(model) {
-            var item = new VirtualMachineItemView({model: model});
-            $('.vms-list', this.$el).append(item.render().el);
-        },
-        render: function() {
-            var self = this;
-            this.$el.html(this.template());
-            _.each(this.collection, function(model) {
-                self.renderListItem(model);
-            });
-            return this;
-        }
-    });
-
-    var VirtualMachineItemView = Backbone.View.extend({
-        template: _.template($('#vm-list-item').html()),
-        tagName: 'li',
-        className: 'list-group-item',
-        render: function() {
-            var $el = $(this.el);
-            $el.html(this.template(this.model.toJSON()));
-            return this;
-        }
-    });
-
-    /**
-     * -----------------
-     * THE FOURTH COLUMN
-     *
-     * Show an unordered
-     * list of key-value
-     * pairs for all the
-     * parameters within
-     * the user-selected
-     * Virtual Machine.
-     * -----------------
-     */
-
-    var VirtualMachineDetailsView = Backbone.View.extend({
-        template: _.template($('#vm-details-wrapper').html()),
-        credentialTemplate: _.template($('#vm-param-item').html()),
-        renderParam: function(key, value) {
-            var $el = $('.vm-param-list', this.$el);
-            $el.append(this.credentialTemplate({key:key, value:value}));
-        },
-        render: function(options) {
-            var self = this,
-                model = this.model.toJSON();
-            $(this.el).html(this.template(model));
-            _.each(model.extra, function(value, key) {
-                self.renderParam(key, value);
-            });
-            return this;
-        }
-    });
-
+    
     /**
      * ----------------------
      * ROUTING
